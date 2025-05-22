@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="LOGIN" time="67.485" tests="5" failures="0" errors="0">
+   <testsuite name="LOGIN" tests="5" failures="0" errors="0" time="67.485" skipped="0" timestamp="23-05-2025T00:59:02" hostname="user - localhost" id="Test Suites/LOGIN">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform"/>
+         <property name="logFolder" value="/Users/user/git/technicalKLG/Reports/20250523_005858/LOGIN/20250523_005858"/>
+         <property name="logFiles" value="/Users/user/git/technicalKLG/Reports/20250523_005858/LOGIN/20250523_005858/execution0.log, /Users/user/git/technicalKLG/Reports/20250523_005858/LOGIN/20250523_005858/console0.log"/>
+         <property name="attachments" value="/Users/user/git/technicalKLG/Reports/20250523_005858/LOGIN/20250523_005858/1747936757091.png, /Users/user/git/technicalKLG/Reports/20250523_005858/LOGIN/20250523_005858/1747936769357.png, /Users/user/git/technicalKLG/Reports/20250523_005858/LOGIN/20250523_005858/1747936780435.png, /Users/user/git/technicalKLG/Reports/20250523_005858/LOGIN/20250523_005858/1747936795080.png, /Users/user/git/technicalKLG/Reports/20250523_005858/LOGIN/20250523_005858/1747936807931.png"/>
+         <property name="hostName" value="user - localhost"/>
+         <property name="os" value="Mac OS X 64bit"/>
+         <property name="katalonVersion" value="10.2.0.0"/>
+         <property name="browser" value="Chrome 136.0.7103.114"/>
+         <property name="userFullName" value="fais alkurnis"/>
+         <property name="hostAddress" value="127.0.0.1"/>
+         <property name="sessionId" value="181ca4a1eae7d0c2027bcb2a1ae3dad3"/>
+         <property name="projectName" value="SampleProject"/>
+         <property name="seleniumVersion" value="4.28.1"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Mac OS X"/>
+      </properties>
+      <testcase name="Test Cases/Login/TC_LOGIN_01" time="16.662" classname="Test Cases/Login/TC_LOGIN_01" status="PASSED">
+         <system-out><![CDATA[23-05-2025T00:59:03 - [TEST_CASE][PASSED] - Test Cases/Login/TC_LOGIN_01: Test Cases/Login/TC_LOGIN_01
+
+23-05-2025T00:59:03 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+23-05-2025T00:59:03 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+23-05-2025T00:59:04 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+23-05-2025T00:59:09 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+23-05-2025T00:59:09 - [TEST_STEP][PASSED] - navigateToUrl(baseUrl): Navigate to 'https://katalon-demo-cura.herokuapp.com' successfully
+
+23-05-2025T00:59:12 - [MESSAGE][PASSED] - Navigate to 'https://katalon-demo-cura.herokuapp.com' successfully
+
+23-05-2025T00:59:12 - [TEST_STEP][PASSED] - click(findTestObject("LoginPage/IconMenu")): Object: 'Object Repository/LoginPage/IconMenu' is clicked on
+
+23-05-2025T00:59:13 - [MESSAGE][PASSED] - Object: 'Object Repository/LoginPage/IconMenu' is clicked on
+
+23-05-2025T00:59:13 - [TEST_STEP][PASSED] - click(findTestObject("LoginPage/LoginButton")): Object: 'Object Repository/LoginPage/LoginButton' is clicked on
+
+23-05-2025T00:59:14 - [MESSAGE][PASSED] - Object: 'Object Repository/LoginPage/LoginButton' is clicked on
+
+23-05-2025T00:59:14 - [TEST_STEP][PASSED] - testData = findTestData("TestData1"): null
+
+23-05-2025T00:59:14 - [TEST_STEP][PASSED] - username = testData.getValue("username", 1): null
+
+23-05-2025T00:59:14 - [TEST_STEP][PASSED] - password = testData.getValue("password", 1): null
+
+23-05-2025T00:59:14 - [TEST_STEP][PASSED] - setText(findTestObject("LoginPage/UsernameField"), username): Text 'John Doe' is set on object 'Object Repository/LoginPage/UsernameField'
+
+23-05-2025T00:59:14 - [MESSAGE][PASSED] - Text 'John Doe' is set on object 'Object Repository/LoginPage/UsernameField'
+
+23-05-2025T00:59:14 - [TEST_STEP][PASSED] - setText(findTestObject("LoginPage/PasswordField"), password): Text 'ThisIsNotAPassword' is set on object 'Object Repository/LoginPage/PasswordField'
+
+23-05-2025T00:59:15 - [MESSAGE][PASSED] - Text 'ThisIsNotAPassword' is set on object 'Object Repository/LoginPage/PasswordField'
+
+23-05-2025T00:59:15 - [TEST_STEP][PASSED] - click(findTestObject("LoginPage/LoginSubmitButton")): Object: 'Object Repository/LoginPage/LoginSubmitButton' is clicked on
+
+23-05-2025T00:59:16 - [MESSAGE][PASSED] - Object: 'Object Repository/LoginPage/LoginSubmitButton' is clicked on
+
+23-05-2025T00:59:16 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("AppointmentPage/ApplyButton"), 5): Object 'Object Repository/AppointmentPage/ApplyButton' is present
+
+23-05-2025T00:59:17 - [MESSAGE][PASSED] - Object 'Object Repository/AppointmentPage/ApplyButton' is present
+
+23-05-2025T00:59:17 - [TEST_STEP][PASSED] - takeFullPageScreenshot(): Taking screenshot successfully
+
+23-05-2025T00:59:19 - [MESSAGE][INFO] - 0 hidden object(s)
+
+23-05-2025T00:59:19 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|/Users/user/git/technicalKLG/Reports/20250523_005858/LOGIN/20250523_005858/1747936757091.png]]]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Login/TC_LOGIN_02" time="11.858" classname="Test Cases/Login/TC_LOGIN_02" status="PASSED">
+         <system-out><![CDATA[23-05-2025T00:59:19 - [TEST_CASE][PASSED] - Test Cases/Login/TC_LOGIN_02: Test Cases/Login/TC_LOGIN_02
+
+23-05-2025T00:59:20 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+23-05-2025T00:59:20 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+23-05-2025T00:59:20 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+23-05-2025T00:59:20 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+23-05-2025T00:59:22 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+23-05-2025T00:59:22 - [TEST_STEP][PASSED] - navigateToUrl(baseUrl): Navigate to 'https://katalon-demo-cura.herokuapp.com' successfully
+
+23-05-2025T00:59:25 - [MESSAGE][PASSED] - Navigate to 'https://katalon-demo-cura.herokuapp.com' successfully
+
+23-05-2025T00:59:25 - [TEST_STEP][PASSED] - click(findTestObject("LoginPage/IconMenu")): Object: 'Object Repository/LoginPage/IconMenu' is clicked on
+
+23-05-2025T00:59:25 - [MESSAGE][PASSED] - Object: 'Object Repository/LoginPage/IconMenu' is clicked on
+
+23-05-2025T00:59:25 - [TEST_STEP][PASSED] - click(findTestObject("LoginPage/LoginButton")): Object: 'Object Repository/LoginPage/LoginButton' is clicked on
+
+23-05-2025T00:59:26 - [MESSAGE][PASSED] - Object: 'Object Repository/LoginPage/LoginButton' is clicked on
+
+23-05-2025T00:59:26 - [TEST_STEP][PASSED] - testData = findTestData("TestData1"): null
+
+23-05-2025T00:59:26 - [TEST_STEP][PASSED] - username = testData.getValue("username", 2): null
+
+23-05-2025T00:59:26 - [TEST_STEP][PASSED] - password = testData.getValue("password", 2): null
+
+23-05-2025T00:59:26 - [TEST_STEP][PASSED] - setText(findTestObject("LoginPage/UsernameField"), username): Text 'JohnDoe' is set on object 'Object Repository/LoginPage/UsernameField'
+
+23-05-2025T00:59:27 - [MESSAGE][PASSED] - Text 'JohnDoe' is set on object 'Object Repository/LoginPage/UsernameField'
+
+23-05-2025T00:59:27 - [TEST_STEP][PASSED] - setText(findTestObject("LoginPage/PasswordField"), password): Text 'ThisIsNotAPassword' is set on object 'Object Repository/LoginPage/PasswordField'
+
+23-05-2025T00:59:27 - [MESSAGE][PASSED] - Text 'ThisIsNotAPassword' is set on object 'Object Repository/LoginPage/PasswordField'
+
+23-05-2025T00:59:27 - [TEST_STEP][PASSED] - click(findTestObject("LoginPage/LoginSubmitButton")): Object: 'Object Repository/LoginPage/LoginSubmitButton' is clicked on
+
+23-05-2025T00:59:28 - [MESSAGE][PASSED] - Object: 'Object Repository/LoginPage/LoginSubmitButton' is clicked on
+
+23-05-2025T00:59:28 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("LoginPage/ErrorMessage"), "Login failed! Please ensure the username and password are valid."): Actual text and expected text of test object 'Object Repository/LoginPage/ErrorMessage' are matched.
+
+23-05-2025T00:59:29 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/LoginPage/ErrorMessage' are matched.
+
+23-05-2025T00:59:29 - [TEST_STEP][PASSED] - takeFullPageScreenshot(): Taking screenshot successfully
+
+23-05-2025T00:59:31 - [MESSAGE][INFO] - 0 hidden object(s)
+
+23-05-2025T00:59:31 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|/Users/user/git/technicalKLG/Reports/20250523_005858/LOGIN/20250523_005858/1747936769357.png]]]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Login/TC_LOGIN_03" time="11.102" classname="Test Cases/Login/TC_LOGIN_03" status="PASSED">
+         <system-out><![CDATA[23-05-2025T00:59:31 - [TEST_CASE][PASSED] - Test Cases/Login/TC_LOGIN_03: Test Cases/Login/TC_LOGIN_03
+
+23-05-2025T00:59:31 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+23-05-2025T00:59:31 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+23-05-2025T00:59:32 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+23-05-2025T00:59:32 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+23-05-2025T00:59:33 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+23-05-2025T00:59:33 - [TEST_STEP][PASSED] - navigateToUrl(baseUrl): Navigate to 'https://katalon-demo-cura.herokuapp.com' successfully
+
+23-05-2025T00:59:37 - [MESSAGE][PASSED] - Navigate to 'https://katalon-demo-cura.herokuapp.com' successfully
+
+23-05-2025T00:59:37 - [TEST_STEP][PASSED] - click(findTestObject("LoginPage/IconMenu")): Object: 'Object Repository/LoginPage/IconMenu' is clicked on
+
+23-05-2025T00:59:37 - [MESSAGE][PASSED] - Object: 'Object Repository/LoginPage/IconMenu' is clicked on
+
+23-05-2025T00:59:37 - [TEST_STEP][PASSED] - click(findTestObject("LoginPage/LoginButton")): Object: 'Object Repository/LoginPage/LoginButton' is clicked on
+
+23-05-2025T00:59:38 - [MESSAGE][PASSED] - Object: 'Object Repository/LoginPage/LoginButton' is clicked on
+
+23-05-2025T00:59:38 - [TEST_STEP][PASSED] - click(findTestObject("LoginPage/LoginSubmitButton")): Object: 'Object Repository/LoginPage/LoginSubmitButton' is clicked on
+
+23-05-2025T00:59:39 - [MESSAGE][PASSED] - Object: 'Object Repository/LoginPage/LoginSubmitButton' is clicked on
+
+23-05-2025T00:59:39 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("LoginPage/ErrorMessage"), "Login failed! Please ensure the username and password are valid."): Actual text and expected text of test object 'Object Repository/LoginPage/ErrorMessage' are matched.
+
+23-05-2025T00:59:40 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/LoginPage/ErrorMessage' are matched.
+
+23-05-2025T00:59:40 - [TEST_STEP][PASSED] - takeFullPageScreenshot(): Taking screenshot successfully
+
+23-05-2025T00:59:42 - [MESSAGE][INFO] - 0 hidden object(s)
+
+23-05-2025T00:59:42 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|/Users/user/git/technicalKLG/Reports/20250523_005858/LOGIN/20250523_005858/1747936780435.png]]]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Login/TC_LOGIN_04" time="14.278" classname="Test Cases/Login/TC_LOGIN_04" status="PASSED">
+         <system-out><![CDATA[23-05-2025T00:59:42 - [TEST_CASE][PASSED] - Test Cases/Login/TC_LOGIN_04: Test Cases/Login/TC_LOGIN_04
+
+23-05-2025T00:59:42 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+23-05-2025T00:59:43 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+23-05-2025T00:59:43 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+23-05-2025T00:59:43 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+23-05-2025T00:59:45 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+23-05-2025T00:59:45 - [TEST_STEP][PASSED] - navigateToUrl(baseUrl): Navigate to 'https://katalon-demo-cura.herokuapp.com' successfully
+
+23-05-2025T00:59:49 - [MESSAGE][PASSED] - Navigate to 'https://katalon-demo-cura.herokuapp.com' successfully
+
+23-05-2025T00:59:50 - [TEST_STEP][PASSED] - click(findTestObject("LoginPage/IconMenu")): Object: 'Object Repository/LoginPage/IconMenu' is clicked on
+
+23-05-2025T00:59:50 - [MESSAGE][PASSED] - Object: 'Object Repository/LoginPage/IconMenu' is clicked on
+
+23-05-2025T00:59:50 - [TEST_STEP][PASSED] - click(findTestObject("LoginPage/LoginButton")): Object: 'Object Repository/LoginPage/LoginButton' is clicked on
+
+23-05-2025T00:59:51 - [MESSAGE][PASSED] - Object: 'Object Repository/LoginPage/LoginButton' is clicked on
+
+23-05-2025T00:59:51 - [TEST_STEP][PASSED] - testData = findTestData("TestData1"): null
+
+23-05-2025T00:59:51 - [TEST_STEP][PASSED] - username = testData.getValue("username", 1): null
+
+23-05-2025T00:59:51 - [TEST_STEP][PASSED] - password = testData.getValue("password", 1): null
+
+23-05-2025T00:59:51 - [TEST_STEP][PASSED] - setText(findTestObject("LoginPage/UsernameField"), username): Text 'John Doe' is set on object 'Object Repository/LoginPage/UsernameField'
+
+23-05-2025T00:59:51 - [MESSAGE][PASSED] - Text 'John Doe' is set on object 'Object Repository/LoginPage/UsernameField'
+
+23-05-2025T00:59:51 - [TEST_STEP][PASSED] - setText(findTestObject("LoginPage/PasswordField"), password): Text 'ThisIsNotAPassword' is set on object 'Object Repository/LoginPage/PasswordField'
+
+23-05-2025T00:59:52 - [MESSAGE][PASSED] - Text 'ThisIsNotAPassword' is set on object 'Object Repository/LoginPage/PasswordField'
+
+23-05-2025T00:59:52 - [TEST_STEP][PASSED] - click(findTestObject("LoginPage/LoginSubmitButton")): Object: 'Object Repository/LoginPage/LoginSubmitButton' is clicked on
+
+23-05-2025T00:59:53 - [MESSAGE][PASSED] - Object: 'Object Repository/LoginPage/LoginSubmitButton' is clicked on
+
+23-05-2025T00:59:53 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("AppointmentPage/ApplyButton"), 5): Object 'Object Repository/AppointmentPage/ApplyButton' is present
+
+23-05-2025T00:59:53 - [MESSAGE][PASSED] - Object 'Object Repository/AppointmentPage/ApplyButton' is present
+
+23-05-2025T00:59:53 - [TEST_STEP][PASSED] - click(findTestObject("LoginPage/IconMenu")): Object: 'Object Repository/LoginPage/IconMenu' is clicked on
+
+23-05-2025T00:59:54 - [MESSAGE][PASSED] - Object: 'Object Repository/LoginPage/IconMenu' is clicked on
+
+23-05-2025T00:59:54 - [TEST_STEP][PASSED] - click(findTestObject("LoginPage/ClickLogout")): Object: 'Object Repository/LoginPage/ClickLogout' is clicked on
+
+23-05-2025T00:59:55 - [MESSAGE][PASSED] - Object: 'Object Repository/LoginPage/ClickLogout' is clicked on
+
+23-05-2025T00:59:55 - [TEST_STEP][PASSED] - takeFullPageScreenshot(): Taking screenshot successfully
+
+23-05-2025T00:59:56 - [MESSAGE][INFO] - 0 hidden object(s)
+
+23-05-2025T00:59:57 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|/Users/user/git/technicalKLG/Reports/20250523_005858/LOGIN/20250523_005858/1747936795080.png]]]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Login/TC_LOGIN_05" time="13.115" classname="Test Cases/Login/TC_LOGIN_05" status="PASSED">
+         <system-out><![CDATA[23-05-2025T00:59:57 - [TEST_CASE][PASSED] - Test Cases/Login/TC_LOGIN_05: Test Cases/Login/TC_LOGIN_05
+
+23-05-2025T00:59:57 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+23-05-2025T00:59:57 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+23-05-2025T00:59:57 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+23-05-2025T00:59:57 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+23-05-2025T01:00:00 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+23-05-2025T01:00:00 - [TEST_STEP][PASSED] - navigateToUrl(baseUrl): Navigate to 'https://katalon-demo-cura.herokuapp.com' successfully
+
+23-05-2025T01:00:06 - [MESSAGE][PASSED] - Navigate to 'https://katalon-demo-cura.herokuapp.com' successfully
+
+23-05-2025T01:00:06 - [TEST_STEP][PASSED] - click(findTestObject("LoginPage/IconMenu")): Object: 'Object Repository/LoginPage/IconMenu' is clicked on
+
+23-05-2025T01:00:06 - [MESSAGE][PASSED] - Object: 'Object Repository/LoginPage/IconMenu' is clicked on
+
+23-05-2025T01:00:06 - [TEST_STEP][PASSED] - click(findTestObject("LoginPage/MakeAppointment")): Object: 'Object Repository/LoginPage/MakeAppointment' is clicked on
+
+23-05-2025T01:00:07 - [MESSAGE][PASSED] - Object: 'Object Repository/LoginPage/MakeAppointment' is clicked on
+
+23-05-2025T01:00:07 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("LoginPage/VerifyLoginPage"), 5): Object 'Object Repository/LoginPage/VerifyLoginPage' is present
+
+23-05-2025T01:00:07 - [MESSAGE][PASSED] - Object 'Object Repository/LoginPage/VerifyLoginPage' is present
+
+23-05-2025T01:00:07 - [TEST_STEP][PASSED] - takeFullPageScreenshot(): Taking screenshot successfully
+
+23-05-2025T01:00:09 - [MESSAGE][INFO] - 0 hidden object(s)
+
+23-05-2025T01:00:10 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|/Users/user/git/technicalKLG/Reports/20250523_005858/LOGIN/20250523_005858/1747936807931.png]]]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[23-05-2025T00:59:02 - [TEST_SUITE][PASSED] - LOGIN: Test Cases/Login/TC_LOGIN_05]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

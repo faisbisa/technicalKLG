@@ -1,0 +1,63 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+LOGIN,Chrome 136.0.7103.114,,,23-05-2025 00:59:02,23-05-2025 01:00:10,1m - 7.652s,PASSED
+,,,,,,,
+Test Cases/Login/TC_LOGIN_01,Chrome 136.0.7103.114,,,23-05-2025 00:59:03,23-05-2025 00:59:19,16.662s,PASSED
+"openBrowser("""")",Chrome 136.0.7103.114,,,23-05-2025 00:59:03,23-05-2025 00:59:09,5.441s,PASSED
+navigateToUrl(baseUrl),Chrome 136.0.7103.114,,,23-05-2025 00:59:09,23-05-2025 00:59:12,3.531s,PASSED
+"click(findTestObject(""LoginPage/IconMenu""))",Chrome 136.0.7103.114,,,23-05-2025 00:59:12,23-05-2025 00:59:13,0.434s,PASSED
+"click(findTestObject(""LoginPage/LoginButton""))",Chrome 136.0.7103.114,,,23-05-2025 00:59:13,23-05-2025 00:59:14,0.849s,PASSED
+"testData = findTestData(""TestData1"")",Chrome 136.0.7103.114,,,23-05-2025 00:59:14,23-05-2025 00:59:14,0.023s,PASSED
+"username = testData.getValue(""username"", 1)",Chrome 136.0.7103.114,,,23-05-2025 00:59:14,23-05-2025 00:59:14,0.031s,PASSED
+"password = testData.getValue(""password"", 1)",Chrome 136.0.7103.114,,,23-05-2025 00:59:14,23-05-2025 00:59:14,0.009s,PASSED
+"setText(findTestObject(""LoginPage/UsernameField""), username)",Chrome 136.0.7103.114,,,23-05-2025 00:59:14,23-05-2025 00:59:14,0.847s,PASSED
+"setText(findTestObject(""LoginPage/PasswordField""), password)",Chrome 136.0.7103.114,,,23-05-2025 00:59:14,23-05-2025 00:59:15,0.548s,PASSED
+"click(findTestObject(""LoginPage/LoginSubmitButton""))",Chrome 136.0.7103.114,,,23-05-2025 00:59:15,23-05-2025 00:59:16,1.098s,PASSED
+"verifyElementPresent(findTestObject(""AppointmentPage/ApplyButton""), 5)",Chrome 136.0.7103.114,,,23-05-2025 00:59:16,23-05-2025 00:59:17,0.459s,PASSED
+takeFullPageScreenshot(),Chrome 136.0.7103.114,,,23-05-2025 00:59:17,23-05-2025 00:59:19,2.873s,PASSED
+,,,,,,,
+Test Cases/Login/TC_LOGIN_02,Chrome 136.0.7103.114,,,23-05-2025 00:59:19,23-05-2025 00:59:31,11.858s,PASSED
+"openBrowser("""")",Chrome 136.0.7103.114,,,23-05-2025 00:59:20,23-05-2025 00:59:22,1.984s,PASSED
+navigateToUrl(baseUrl),Chrome 136.0.7103.114,,,23-05-2025 00:59:22,23-05-2025 00:59:25,3.509s,PASSED
+"click(findTestObject(""LoginPage/IconMenu""))",Chrome 136.0.7103.114,,,23-05-2025 00:59:25,23-05-2025 00:59:25,0.329s,PASSED
+"click(findTestObject(""LoginPage/LoginButton""))",Chrome 136.0.7103.114,,,23-05-2025 00:59:25,23-05-2025 00:59:26,0.795s,PASSED
+"testData = findTestData(""TestData1"")",Chrome 136.0.7103.114,,,23-05-2025 00:59:26,23-05-2025 00:59:26,0.012s,PASSED
+"username = testData.getValue(""username"", 2)",Chrome 136.0.7103.114,,,23-05-2025 00:59:26,23-05-2025 00:59:26,0.010s,PASSED
+"password = testData.getValue(""password"", 2)",Chrome 136.0.7103.114,,,23-05-2025 00:59:26,23-05-2025 00:59:26,0.008s,PASSED
+"setText(findTestObject(""LoginPage/UsernameField""), username)",Chrome 136.0.7103.114,,,23-05-2025 00:59:26,23-05-2025 00:59:27,0.725s,PASSED
+"setText(findTestObject(""LoginPage/PasswordField""), password)",Chrome 136.0.7103.114,,,23-05-2025 00:59:27,23-05-2025 00:59:27,0.535s,PASSED
+"click(findTestObject(""LoginPage/LoginSubmitButton""))",Chrome 136.0.7103.114,,,23-05-2025 00:59:27,23-05-2025 00:59:28,0.924s,PASSED
+"verifyElementText(findTestObject(""LoginPage/ErrorMessage""), ""Login failed! Please ensure the username and password are valid."")",Chrome 136.0.7103.114,,,23-05-2025 00:59:28,23-05-2025 00:59:29,0.481s,PASSED
+takeFullPageScreenshot(),Chrome 136.0.7103.114,,,23-05-2025 00:59:29,23-05-2025 00:59:31,2.456s,PASSED
+,,,,,,,
+Test Cases/Login/TC_LOGIN_03,Chrome 136.0.7103.114,,,23-05-2025 00:59:31,23-05-2025 00:59:42,11.102s,PASSED
+"openBrowser("""")",Chrome 136.0.7103.114,,,23-05-2025 00:59:31,23-05-2025 00:59:33,1.976s,PASSED
+navigateToUrl(baseUrl),Chrome 136.0.7103.114,,,23-05-2025 00:59:33,23-05-2025 00:59:37,3.735s,PASSED
+"click(findTestObject(""LoginPage/IconMenu""))",Chrome 136.0.7103.114,,,23-05-2025 00:59:37,23-05-2025 00:59:37,0.326s,PASSED
+"click(findTestObject(""LoginPage/LoginButton""))",Chrome 136.0.7103.114,,,23-05-2025 00:59:37,23-05-2025 00:59:38,0.896s,PASSED
+"click(findTestObject(""LoginPage/LoginSubmitButton""))",Chrome 136.0.7103.114,,,23-05-2025 00:59:38,23-05-2025 00:59:39,1.111s,PASSED
+"verifyElementText(findTestObject(""LoginPage/ErrorMessage""), ""Login failed! Please ensure the username and password are valid."")",Chrome 136.0.7103.114,,,23-05-2025 00:59:39,23-05-2025 00:59:40,0.472s,PASSED
+takeFullPageScreenshot(),Chrome 136.0.7103.114,,,23-05-2025 00:59:40,23-05-2025 00:59:42,2.487s,PASSED
+,,,,,,,
+Test Cases/Login/TC_LOGIN_04,Chrome 136.0.7103.114,,,23-05-2025 00:59:42,23-05-2025 00:59:57,14.278s,PASSED
+"openBrowser("""")",Chrome 136.0.7103.114,,,23-05-2025 00:59:42,23-05-2025 00:59:45,2.775s,PASSED
+navigateToUrl(baseUrl),Chrome 136.0.7103.114,,,23-05-2025 00:59:45,23-05-2025 00:59:50,4.233s,PASSED
+"click(findTestObject(""LoginPage/IconMenu""))",Chrome 136.0.7103.114,,,23-05-2025 00:59:50,23-05-2025 00:59:50,0.312s,PASSED
+"click(findTestObject(""LoginPage/LoginButton""))",Chrome 136.0.7103.114,,,23-05-2025 00:59:50,23-05-2025 00:59:51,0.770s,PASSED
+"testData = findTestData(""TestData1"")",Chrome 136.0.7103.114,,,23-05-2025 00:59:51,23-05-2025 00:59:51,0.005s,PASSED
+"username = testData.getValue(""username"", 1)",Chrome 136.0.7103.114,,,23-05-2025 00:59:51,23-05-2025 00:59:51,0.003s,PASSED
+"password = testData.getValue(""password"", 1)",Chrome 136.0.7103.114,,,23-05-2025 00:59:51,23-05-2025 00:59:51,0.003s,PASSED
+"setText(findTestObject(""LoginPage/UsernameField""), username)",Chrome 136.0.7103.114,,,23-05-2025 00:59:51,23-05-2025 00:59:51,0.823s,PASSED
+"setText(findTestObject(""LoginPage/PasswordField""), password)",Chrome 136.0.7103.114,,,23-05-2025 00:59:51,23-05-2025 00:59:52,0.533s,PASSED
+"click(findTestObject(""LoginPage/LoginSubmitButton""))",Chrome 136.0.7103.114,,,23-05-2025 00:59:52,23-05-2025 00:59:53,1.001s,PASSED
+"verifyElementPresent(findTestObject(""AppointmentPage/ApplyButton""), 5)",Chrome 136.0.7103.114,,,23-05-2025 00:59:53,23-05-2025 00:59:53,0.444s,PASSED
+"click(findTestObject(""LoginPage/IconMenu""))",Chrome 136.0.7103.114,,,23-05-2025 00:59:53,23-05-2025 00:59:54,0.275s,PASSED
+"click(findTestObject(""LoginPage/ClickLogout""))",Chrome 136.0.7103.114,,,23-05-2025 00:59:54,23-05-2025 00:59:55,0.894s,PASSED
+takeFullPageScreenshot(),Chrome 136.0.7103.114,,,23-05-2025 00:59:55,23-05-2025 00:59:57,2.128s,PASSED
+,,,,,,,
+Test Cases/Login/TC_LOGIN_05,Chrome 136.0.7103.114,,,23-05-2025 00:59:57,23-05-2025 01:00:10,13.115s,PASSED
+"openBrowser("""")",Chrome 136.0.7103.114,,,23-05-2025 00:59:57,23-05-2025 01:00:00,3.054s,PASSED
+navigateToUrl(baseUrl),Chrome 136.0.7103.114,,,23-05-2025 01:00:00,23-05-2025 01:00:06,6.172s,PASSED
+"click(findTestObject(""LoginPage/IconMenu""))",Chrome 136.0.7103.114,,,23-05-2025 01:00:06,23-05-2025 01:00:06,0.315s,PASSED
+"click(findTestObject(""LoginPage/MakeAppointment""))",Chrome 136.0.7103.114,,,23-05-2025 01:00:06,23-05-2025 01:00:07,0.719s,PASSED
+"verifyElementPresent(findTestObject(""LoginPage/VerifyLoginPage""), 5)",Chrome 136.0.7103.114,,,23-05-2025 01:00:07,23-05-2025 01:00:07,0.365s,PASSED
+takeFullPageScreenshot(),Chrome 136.0.7103.114,,,23-05-2025 01:00:07,23-05-2025 01:00:10,2.391s,PASSED

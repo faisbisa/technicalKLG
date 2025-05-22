@@ -1,0 +1,577 @@
+2025-05-23 01:00:22.392 INFO  c.k.katalon.core.main.TestSuiteExecutor  - START Test Suites/MakeAppointment
+2025-05-23 01:00:22.515 INFO  c.k.katalon.core.main.TestSuiteExecutor  - userFullName = fais alkurnis
+2025-05-23 01:00:22.516 INFO  c.k.katalon.core.main.TestSuiteExecutor  - projectName = SampleProject
+2025-05-23 01:00:22.517 INFO  c.k.katalon.core.main.TestSuiteExecutor  - hostName = user - localhost
+2025-05-23 01:00:22.518 INFO  c.k.katalon.core.main.TestSuiteExecutor  - os = Mac OS X 64bit
+2025-05-23 01:00:22.519 INFO  c.k.katalon.core.main.TestSuiteExecutor  - hostAddress = 127.0.0.1
+2025-05-23 01:00:22.520 INFO  c.k.katalon.core.main.TestSuiteExecutor  - katalonVersion = 10.2.0.0
+2025-05-23 01:00:22.971 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2025-05-23 01:00:22.972 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/MakeAppointment/TC_APPT_04
+2025-05-23 01:00:23.486 DEBUG testcase.TC_APPT_04                      - 1: callTestCase(findTestCase("Login/TC_LOGIN_01"), [:], STOP_ON_FAILURE)
+2025-05-23 01:00:23.627 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2025-05-23 01:00:23.627 INFO  c.k.katalon.core.main.TestCaseExecutor   - CALL Test Cases/Login/TC_LOGIN_01
+2025-05-23 01:00:23.723 DEBUG testcase.TC_LOGIN_01                     - 1: openBrowser("")
+2025-05-23 01:00:23.891 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Chrome' driver
+2025-05-23 01:00:23.933 INFO  c.k.k.core.webui.driver.DriverFactory    - Action delay is set to 0 milliseconds
+May 23, 2025 1:00:26 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 136
+May 23, 2025 1:00:26 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 136.0.7103.114. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.28.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+2025-05-23 01:00:26.863 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = 0a9fb0b54fef683f3986f39ee2ce77f7
+2025-05-23 01:00:26.865 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Chrome 136.0.7103.114
+2025-05-23 01:00:26.865 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Mac OS X
+2025-05-23 01:00:26.866 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 4.28.1
+2025-05-23 01:00:26.877 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList="", isApplyToDesiredCapabilities=true }
+2025-05-23 01:00:26.923 DEBUG testcase.TC_LOGIN_01                     - 2: navigateToUrl(baseUrl)
+2025-05-23 01:00:31.450 DEBUG testcase.TC_LOGIN_01                     - 3: click(findTestObject("LoginPage/IconMenu"))
+2025-05-23 01:00:31.830 DEBUG testcase.TC_LOGIN_01                     - 4: click(findTestObject("LoginPage/LoginButton"))
+2025-05-23 01:00:32.530 DEBUG testcase.TC_LOGIN_01                     - 5: testData = findTestData("TestData1")
+2025-05-23 01:00:32.543 DEBUG testcase.TC_LOGIN_01                     - 6: username = testData.getValue("username", 1)
+2025-05-23 01:00:32.572 DEBUG testcase.TC_LOGIN_01                     - 7: password = testData.getValue("password", 1)
+2025-05-23 01:00:32.579 DEBUG testcase.TC_LOGIN_01                     - 8: setText(findTestObject("LoginPage/UsernameField"), username)
+2025-05-23 01:00:33.435 DEBUG testcase.TC_LOGIN_01                     - 9: setText(findTestObject("LoginPage/PasswordField"), password)
+2025-05-23 01:00:33.973 DEBUG testcase.TC_LOGIN_01                     - 10: click(findTestObject("LoginPage/LoginSubmitButton"))
+2025-05-23 01:00:35.011 DEBUG testcase.TC_LOGIN_01                     - 11: verifyElementPresent(findTestObject("AppointmentPage/ApplyButton"), 5)
+2025-05-23 01:00:35.483 DEBUG testcase.TC_LOGIN_01                     - 12: takeFullPageScreenshot()
+2025-05-23 01:00:37.704 INFO  c.kms.katalon.core.webui.util.FileUtil   - 0 hidden object(s)
+2025-05-23 01:00:38.339 INFO  c.k.katalon.core.main.TestCaseExecutor   - END CALL Test Cases/Login/TC_LOGIN_01
+2025-05-23 01:00:38.340 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2025-05-23 01:00:38.347 DEBUG testcase.TC_APPT_04                      - 2: facility = findTestData("AppointmentData").getValue("Facility", 1)
+2025-05-23 01:00:38.354 DEBUG testcase.TC_APPT_04                      - 3: readmission = findTestData("AppointmentData").getValue("ApplyReadmission", 1)
+2025-05-23 01:00:38.359 DEBUG testcase.TC_APPT_04                      - 4: program = findTestData("AppointmentData").getValue("Program", 1)
+2025-05-23 01:00:38.366 DEBUG testcase.TC_APPT_04                      - 5: visitDate = findTestData("AppointmentData").getValue("VisitDate", 2)
+2025-05-23 01:00:38.373 DEBUG testcase.TC_APPT_04                      - 6: comment = findTestData("AppointmentData").getValue("Comment", 1)
+2025-05-23 01:00:38.378 DEBUG testcase.TC_APPT_04                      - 7: selectOptionByLabel(findTestObject("AppointmentPage/FacilityDropdown"), facility, false)
+2025-05-23 01:00:38.900 DEBUG testcase.TC_APPT_04                      - 8: if (readmission == "Yes")
+2025-05-23 01:00:38.902 DEBUG testcase.TC_APPT_04                      - 1: check(findTestObject("AppointmentPage/CheckboxReadmission"))
+2025-05-23 01:00:39.204 DEBUG testcase.TC_APPT_04                      - 9: switch (program)
+2025-05-23 01:00:39.206 DEBUG testcase.TC_APPT_04                      - 1: case "Medicaid":
+2025-05-23 01:00:39.208 DEBUG testcase.TC_APPT_04                      - 1: click(findTestObject("AppointmentPage/RadioMedicaid"))
+2025-05-23 01:00:39.495 DEBUG testcase.TC_APPT_04                      - 2: break
+2025-05-23 01:00:39.498 DEBUG testcase.TC_APPT_04                      - 10: setText(findTestObject("AppointmentPage/CommentField"), comment)
+2025-05-23 01:00:40.038 DEBUG testcase.TC_APPT_04                      - 11: click(findTestObject("AppointmentPage/ApplyButton"))
+2025-05-23 01:00:40.388 DEBUG testcase.TC_APPT_04                      - 12: delay(2)
+2025-05-23 01:00:42.403 DEBUG testcase.TC_APPT_04                      - 13: dateField = findTestObject("AppointmentPage/CalendarInput")
+2025-05-23 01:00:42.412 DEBUG testcase.TC_APPT_04                      - 14: validationMessage = executeJavaScript("return arguments[0].validationMessage;", Arrays.asList(findWebElement(dateField)))
+2025-05-23 01:00:42.710 DEBUG testcase.TC_APPT_04                      - 15: println("Validation Message: " + validationMessage)
+Validation Message: Please fill out this field.
+2025-05-23 01:00:42.716 DEBUG testcase.TC_APPT_04                      - 16: assert validationMessage == "Please fill out this field."
+2025-05-23 01:00:42.720 DEBUG testcase.TC_APPT_04                      - 17: takeScreenshot()
+2025-05-23 01:00:43.290 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/MakeAppointment/TC_APPT_04
+2025-05-23 01:00:43.296 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2025-05-23 01:00:43.296 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/MakeAppointment/TC_APPT_03
+2025-05-23 01:00:43.436 DEBUG testcase.TC_APPT_03                      - 1: callTestCase(findTestCase("Login/TC_LOGIN_01"), [:], STOP_ON_FAILURE)
+2025-05-23 01:00:43.501 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2025-05-23 01:00:43.502 INFO  c.k.katalon.core.main.TestCaseExecutor   - CALL Test Cases/Login/TC_LOGIN_01
+2025-05-23 01:00:43.531 DEBUG testcase.TC_LOGIN_01                     - 1: openBrowser("")
+2025-05-23 01:00:43.539 WARN  c.k.k.core.webui.driver.DriverFactory    - A browser is already opened. Closing browser and opening a new one
+2025-05-23 01:00:43.697 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Chrome' driver
+2025-05-23 01:00:43.698 INFO  c.k.k.core.webui.driver.DriverFactory    - Action delay is set to 0 milliseconds
+May 23, 2025 1:00:44 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 136
+May 23, 2025 1:00:44 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 136.0.7103.114. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.28.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+2025-05-23 01:00:45.032 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = dd2334a15340b167af20c2cf21bce092
+2025-05-23 01:00:45.033 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Chrome 136.0.7103.114
+2025-05-23 01:00:45.033 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Mac OS X
+2025-05-23 01:00:45.034 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 4.28.1
+2025-05-23 01:00:45.035 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList="", isApplyToDesiredCapabilities=true }
+2025-05-23 01:00:45.057 DEBUG testcase.TC_LOGIN_01                     - 2: navigateToUrl(baseUrl)
+2025-05-23 01:00:49.562 DEBUG testcase.TC_LOGIN_01                     - 3: click(findTestObject("LoginPage/IconMenu"))
+2025-05-23 01:00:49.890 DEBUG testcase.TC_LOGIN_01                     - 4: click(findTestObject("LoginPage/LoginButton"))
+2025-05-23 01:00:50.678 DEBUG testcase.TC_LOGIN_01                     - 5: testData = findTestData("TestData1")
+2025-05-23 01:00:50.683 DEBUG testcase.TC_LOGIN_01                     - 6: username = testData.getValue("username", 1)
+2025-05-23 01:00:50.686 DEBUG testcase.TC_LOGIN_01                     - 7: password = testData.getValue("password", 1)
+2025-05-23 01:00:50.710 DEBUG testcase.TC_LOGIN_01                     - 8: setText(findTestObject("LoginPage/UsernameField"), username)
+2025-05-23 01:00:51.430 DEBUG testcase.TC_LOGIN_01                     - 9: setText(findTestObject("LoginPage/PasswordField"), password)
+2025-05-23 01:00:51.966 DEBUG testcase.TC_LOGIN_01                     - 10: click(findTestObject("LoginPage/LoginSubmitButton"))
+2025-05-23 01:00:53.170 DEBUG testcase.TC_LOGIN_01                     - 11: verifyElementPresent(findTestObject("AppointmentPage/ApplyButton"), 5)
+2025-05-23 01:00:53.618 DEBUG testcase.TC_LOGIN_01                     - 12: takeFullPageScreenshot()
+2025-05-23 01:00:55.537 INFO  c.kms.katalon.core.webui.util.FileUtil   - 0 hidden object(s)
+2025-05-23 01:00:56.143 INFO  c.k.katalon.core.main.TestCaseExecutor   - END CALL Test Cases/Login/TC_LOGIN_01
+2025-05-23 01:00:56.143 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2025-05-23 01:00:56.145 DEBUG testcase.TC_APPT_03                      - 2: facility = findTestData("AppointmentData").getValue("Facility", 1)
+2025-05-23 01:00:56.150 DEBUG testcase.TC_APPT_03                      - 3: readmission = findTestData("AppointmentData").getValue("ApplyReadmission", 1)
+2025-05-23 01:00:56.155 DEBUG testcase.TC_APPT_03                      - 4: program = findTestData("AppointmentData").getValue("Program", 1)
+2025-05-23 01:00:56.159 DEBUG testcase.TC_APPT_03                      - 5: visitDate = findTestData("AppointmentData").getValue("VisitDate", 2)
+2025-05-23 01:00:56.165 DEBUG testcase.TC_APPT_03                      - 6: comment = findTestData("AppointmentData").getValue("Comment", 1)
+2025-05-23 01:00:56.171 DEBUG testcase.TC_APPT_03                      - 7: selectOptionByLabel(findTestObject("AppointmentPage/FacilityDropdown"), facility, false)
+2025-05-23 01:00:56.663 DEBUG testcase.TC_APPT_03                      - 8: if (readmission == "Yes")
+2025-05-23 01:00:56.664 DEBUG testcase.TC_APPT_03                      - 1: check(findTestObject("AppointmentPage/CheckboxReadmission"))
+2025-05-23 01:00:56.957 DEBUG testcase.TC_APPT_03                      - 9: switch (program)
+2025-05-23 01:00:56.960 DEBUG testcase.TC_APPT_03                      - 1: case "Medicaid":
+2025-05-23 01:00:56.961 DEBUG testcase.TC_APPT_03                      - 1: click(findTestObject("AppointmentPage/RadioMedicaid"))
+2025-05-23 01:00:57.246 DEBUG testcase.TC_APPT_03                      - 2: break
+2025-05-23 01:00:57.248 DEBUG testcase.TC_APPT_03                      - 10: setText(findTestObject("AppointmentPage/CalendarInput"), visitDate)
+2025-05-23 01:00:57.812 DEBUG testcase.TC_APPT_03                      - 11: delay(2)
+2025-05-23 01:00:59.821 DEBUG testcase.TC_APPT_03                      - 12: setText(findTestObject("AppointmentPage/CommentField"), comment)
+2025-05-23 01:01:00.349 DEBUG testcase.TC_APPT_03                      - 13: click(findTestObject("AppointmentPage/ApplyButton"))
+2025-05-23 01:01:01.123 DEBUG testcase.TC_APPT_03                      - 14: dateField = findTestObject("AppointmentPage/CalendarInput")
+2025-05-23 01:01:01.133 DEBUG testcase.TC_APPT_03                      - 15: validationMessage = executeJavaScript("return arguments[0].validationMessage;", Arrays.asList(findWebElement(dateField)))
+2025-05-23 01:01:29.745 WARN  c.k.k.c.w.h.s.WebUIScreenCaptor          - Cannot take screenshot
+2025-05-23 01:01:29.748 ERROR c.k.k.core.keyword.internal.KeywordMain  - ❌ Cannot find web element by test object Object Repository/AppointmentPage/CalendarInput (Root cause: com.kms.katalon.core.exception.StepFailedException: Cannot find web element by test object Object Repository/AppointmentPage/CalendarInput
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:117)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:43)
+	at com.kms.katalon.core.webui.keyword.builtin.FindWebElementKeyword.findWebElement(FindWebElementKeyword.groovy:86)
+	at com.kms.katalon.core.webui.keyword.builtin.FindWebElementKeyword.execute(FindWebElementKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.findWebElement(WebUiBuiltInKeywords.groovy:2919)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.findWebElement(WebUiBuiltInKeywords.groovy:2918)
+	at TC_APPT_03.run(TC_APPT_03:62)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:486)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:477)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:456)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:160)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:107)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:186)
+	at TempTestSuite1747936818314.run(TempTestSuite1747936818314.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.7.5', java.version: '17.0.14'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Command: [dd2334a15340b167af20c2cf21bce092, findElements {using=xpath, value=//*[@id='txt_visit_date']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: /var/folders/_z/5xqwqgjj53g...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63105}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:63105/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: ignore, webSocketUrl: ws://localhost:45981/sessio..., webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: dd2334a15340b167af20c2cf21bce092
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElements(ElementLocation.java:182)
+	at org.openqa.selenium.remote.ElementLocation.findElements(ElementLocation.java:103)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:381)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:375)
+	at jdk.internal.reflect.GeneratedMethodAccessor17.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at org.openqa.selenium.support.decorators.WebDriverDecorator.call(WebDriverDecorator.java:315)
+	at org.openqa.selenium.support.decorators.DefaultDecorated.call(DefaultDecorated.java:48)
+	at org.openqa.selenium.support.decorators.WebDriverDecorator.lambda$createProxyFactory$3(WebDriverDecorator.java:405)
+	at org.openqa.selenium.remote.RemoteWebDriver$ByteBuddy$zPZaFjFT.findElements(Unknown Source)
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findElementByNormalMethods(WebUiCommonHelper.java:1063)
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findElementsBySelectedMethod(WebUiCommonHelper.java:954)
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findElementsBySelectedMethod(WebUiCommonHelper.java:936)
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findElementsBySelectedMethod(WebUiCommonHelper.java:931)
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findElementsByDefault(WebUiCommonHelper.java:927)
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElements(WebUiCommonHelper.java:759)
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1447)
+	at com.kms.katalon.core.webui.keyword.builtin.FindWebElementKeyword$_findWebElement_closure1.doCall(FindWebElementKeyword.groovy:77)
+	at com.kms.katalon.core.webui.keyword.builtin.FindWebElementKeyword$_findWebElement_closure1.call(FindWebElementKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:35)
+	at com.kms.katalon.core.webui.keyword.builtin.FindWebElementKeyword.findWebElement(FindWebElementKeyword.groovy:86)
+	at com.kms.katalon.core.webui.keyword.builtin.FindWebElementKeyword.execute(FindWebElementKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.findWebElement(WebUiBuiltInKeywords.groovy:2919)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.findWebElement(WebUiBuiltInKeywords.groovy:2918)
+	at Script1747675450383.run(Script1747675450383.groovy:62)
+	... 15 more
+)
+2025-05-23 01:01:29.754 ERROR c.k.katalon.core.main.TestCaseExecutor   - ❌ Test Cases/MakeAppointment/TC_APPT_03 FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Cannot find web element by test object Object Repository/AppointmentPage/CalendarInput
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:117)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:43)
+	at com.kms.katalon.core.webui.keyword.builtin.FindWebElementKeyword.findWebElement(FindWebElementKeyword.groovy:86)
+	at com.kms.katalon.core.webui.keyword.builtin.FindWebElementKeyword.execute(FindWebElementKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.findWebElement(WebUiBuiltInKeywords.groovy:2919)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.findWebElement(WebUiBuiltInKeywords.groovy:2918)
+	at TC_APPT_03.run(TC_APPT_03:62)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:486)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:477)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:456)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:160)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:107)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:186)
+	at TempTestSuite1747936818314.run(TempTestSuite1747936818314.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.7.5', java.version: '17.0.14'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Command: [dd2334a15340b167af20c2cf21bce092, findElements {using=xpath, value=//*[@id='txt_visit_date']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: /var/folders/_z/5xqwqgjj53g...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63105}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:63105/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: ignore, webSocketUrl: ws://localhost:45981/sessio..., webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: dd2334a15340b167af20c2cf21bce092
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElements(ElementLocation.java:182)
+	at org.openqa.selenium.remote.ElementLocation.findElements(ElementLocation.java:103)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:381)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:375)
+	at jdk.internal.reflect.GeneratedMethodAccessor17.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at org.openqa.selenium.support.decorators.WebDriverDecorator.call(WebDriverDecorator.java:315)
+	at org.openqa.selenium.support.decorators.DefaultDecorated.call(DefaultDecorated.java:48)
+	at org.openqa.selenium.support.decorators.WebDriverDecorator.lambda$createProxyFactory$3(WebDriverDecorator.java:405)
+	at org.openqa.selenium.remote.RemoteWebDriver$ByteBuddy$zPZaFjFT.findElements(Unknown Source)
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findElementByNormalMethods(WebUiCommonHelper.java:1063)
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findElementsBySelectedMethod(WebUiCommonHelper.java:954)
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findElementsBySelectedMethod(WebUiCommonHelper.java:936)
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findElementsBySelectedMethod(WebUiCommonHelper.java:931)
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findElementsByDefault(WebUiCommonHelper.java:927)
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElements(WebUiCommonHelper.java:759)
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1447)
+	at com.kms.katalon.core.webui.keyword.builtin.FindWebElementKeyword$_findWebElement_closure1.doCall(FindWebElementKeyword.groovy:77)
+	at com.kms.katalon.core.webui.keyword.builtin.FindWebElementKeyword$_findWebElement_closure1.call(FindWebElementKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:35)
+	... 21 more
+
+2025-05-23 01:01:29.761 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/MakeAppointment/TC_APPT_03
+2025-05-23 01:01:29.764 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2025-05-23 01:01:29.765 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/MakeAppointment/TC_APPT_06
+2025-05-23 01:01:29.865 DEBUG testcase.TC_APPT_06                      - 1: callTestCase(findTestCase("Login/TC_LOGIN_01"), [:], STOP_ON_FAILURE)
+2025-05-23 01:01:29.929 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2025-05-23 01:01:29.929 INFO  c.k.katalon.core.main.TestCaseExecutor   - CALL Test Cases/Login/TC_LOGIN_01
+2025-05-23 01:01:29.942 DEBUG testcase.TC_LOGIN_01                     - 1: openBrowser("")
+2025-05-23 01:01:29.947 WARN  c.k.k.core.webui.driver.DriverFactory    - A browser is already opened. Closing browser and opening a new one
+2025-05-23 01:01:29.965 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Chrome' driver
+2025-05-23 01:01:29.967 INFO  c.k.k.core.webui.driver.DriverFactory    - Action delay is set to 0 milliseconds
+May 23, 2025 1:01:31 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 136
+May 23, 2025 1:01:31 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 136.0.7103.114. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.28.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+2025-05-23 01:01:31.750 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = b2fb24b3f6fd7c410c947c2090629d1e
+2025-05-23 01:01:31.751 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Chrome 136.0.7103.114
+2025-05-23 01:01:31.751 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Mac OS X
+2025-05-23 01:01:31.752 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 4.28.1
+2025-05-23 01:01:31.753 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList="", isApplyToDesiredCapabilities=true }
+2025-05-23 01:01:31.780 DEBUG testcase.TC_LOGIN_01                     - 2: navigateToUrl(baseUrl)
+2025-05-23 01:01:37.743 DEBUG testcase.TC_LOGIN_01                     - 3: click(findTestObject("LoginPage/IconMenu"))
+2025-05-23 01:01:38.060 DEBUG testcase.TC_LOGIN_01                     - 4: click(findTestObject("LoginPage/LoginButton"))
+2025-05-23 01:01:38.814 DEBUG testcase.TC_LOGIN_01                     - 5: testData = findTestData("TestData1")
+2025-05-23 01:01:38.820 DEBUG testcase.TC_LOGIN_01                     - 6: username = testData.getValue("username", 1)
+2025-05-23 01:01:38.821 DEBUG testcase.TC_LOGIN_01                     - 7: password = testData.getValue("password", 1)
+2025-05-23 01:01:38.822 DEBUG testcase.TC_LOGIN_01                     - 8: setText(findTestObject("LoginPage/UsernameField"), username)
+2025-05-23 01:01:39.641 DEBUG testcase.TC_LOGIN_01                     - 9: setText(findTestObject("LoginPage/PasswordField"), password)
+2025-05-23 01:01:40.197 DEBUG testcase.TC_LOGIN_01                     - 10: click(findTestObject("LoginPage/LoginSubmitButton"))
+2025-05-23 01:01:41.150 DEBUG testcase.TC_LOGIN_01                     - 11: verifyElementPresent(findTestObject("AppointmentPage/ApplyButton"), 5)
+2025-05-23 01:01:41.620 DEBUG testcase.TC_LOGIN_01                     - 12: takeFullPageScreenshot()
+2025-05-23 01:01:43.528 INFO  c.kms.katalon.core.webui.util.FileUtil   - 0 hidden object(s)
+2025-05-23 01:01:44.056 INFO  c.k.katalon.core.main.TestCaseExecutor   - END CALL Test Cases/Login/TC_LOGIN_01
+2025-05-23 01:01:44.057 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2025-05-23 01:01:44.059 DEBUG testcase.TC_APPT_06                      - 2: facility = findTestData("AppointmentData").getValue("Facility", 1)
+2025-05-23 01:01:44.064 DEBUG testcase.TC_APPT_06                      - 3: readmission = findTestData("AppointmentData").getValue("ApplyReadmission", 1)
+2025-05-23 01:01:44.068 DEBUG testcase.TC_APPT_06                      - 4: program = findTestData("AppointmentData").getValue("Program", 1)
+2025-05-23 01:01:44.072 DEBUG testcase.TC_APPT_06                      - 5: visitDate = findTestData("AppointmentData").getValue("VisitDate", 1)
+2025-05-23 01:01:44.075 DEBUG testcase.TC_APPT_06                      - 6: comment = findTestData("AppointmentData").getValue("Comment", 3)
+2025-05-23 01:01:44.080 DEBUG testcase.TC_APPT_06                      - 7: selectOptionByLabel(findTestObject("AppointmentPage/FacilityDropdown"), facility, false)
+2025-05-23 01:01:44.571 DEBUG testcase.TC_APPT_06                      - 8: if (readmission == "Yes")
+2025-05-23 01:01:44.573 DEBUG testcase.TC_APPT_06                      - 1: check(findTestObject("AppointmentPage/CheckboxReadmission"))
+2025-05-23 01:01:44.865 DEBUG testcase.TC_APPT_06                      - 2: delay(2)
+2025-05-23 01:01:46.871 DEBUG testcase.TC_APPT_06                      - 9: switch (program)
+2025-05-23 01:01:46.874 DEBUG testcase.TC_APPT_06                      - 1: case "Medicaid":
+2025-05-23 01:01:46.876 DEBUG testcase.TC_APPT_06                      - 1: click(findTestObject("AppointmentPage/RadioMedicaid"))
+2025-05-23 01:01:47.157 DEBUG testcase.TC_APPT_06                      - 2: break
+2025-05-23 01:01:47.158 DEBUG testcase.TC_APPT_06                      - 10: setText(findTestObject("AppointmentPage/CalendarInput"), visitDate)
+2025-05-23 01:01:47.730 DEBUG testcase.TC_APPT_06                      - 11: setText(findTestObject("AppointmentPage/CommentField"), comment)
+2025-05-23 01:01:49.620 DEBUG testcase.TC_APPT_06                      - 12: delay(2)
+2025-05-23 01:01:51.625 DEBUG testcase.TC_APPT_06                      - 13: click(findTestObject("AppointmentPage/ApplyButton"))
+2025-05-23 01:01:51.900 DEBUG testcase.TC_APPT_06                      - 14: dateField = findTestObject("AppointmentPage/CommentField")
+2025-05-23 01:01:51.904 DEBUG testcase.TC_APPT_06                      - 15: validationMessage = executeJavaScript("return arguments[0].validationMessage;", Arrays.asList(findWebElement(dateField)))
+2025-05-23 01:02:19.275 WARN  c.k.k.c.w.h.s.WebUIScreenCaptor          - Cannot take screenshot
+2025-05-23 01:02:19.277 ERROR c.k.k.core.keyword.internal.KeywordMain  - ❌ Cannot find web element by test object Object Repository/AppointmentPage/CommentField (Root cause: com.kms.katalon.core.exception.StepFailedException: Cannot find web element by test object Object Repository/AppointmentPage/CommentField
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:117)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:43)
+	at com.kms.katalon.core.webui.keyword.builtin.FindWebElementKeyword.findWebElement(FindWebElementKeyword.groovy:86)
+	at com.kms.katalon.core.webui.keyword.builtin.FindWebElementKeyword.execute(FindWebElementKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.findWebElement(WebUiBuiltInKeywords.groovy:2919)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.findWebElement(WebUiBuiltInKeywords.groovy:2918)
+	at TC_APPT_06.run(TC_APPT_06:64)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:486)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:477)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:456)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:160)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:107)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:186)
+	at TempTestSuite1747936818314.run(TempTestSuite1747936818314.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.7.5', java.version: '17.0.14'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Command: [b2fb24b3f6fd7c410c947c2090629d1e, findElements {using=xpath, value=//*[@id='txt_comment']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: /var/folders/_z/5xqwqgjj53g...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63334}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:63334/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: ignore, webSocketUrl: ws://localhost:11704/sessio..., webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b2fb24b3f6fd7c410c947c2090629d1e
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElements(ElementLocation.java:182)
+	at org.openqa.selenium.remote.ElementLocation.findElements(ElementLocation.java:103)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:381)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:375)
+	at jdk.internal.reflect.GeneratedMethodAccessor17.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at org.openqa.selenium.support.decorators.WebDriverDecorator.call(WebDriverDecorator.java:315)
+	at org.openqa.selenium.support.decorators.DefaultDecorated.call(DefaultDecorated.java:48)
+	at org.openqa.selenium.support.decorators.WebDriverDecorator.lambda$createProxyFactory$3(WebDriverDecorator.java:405)
+	at org.openqa.selenium.remote.RemoteWebDriver$ByteBuddy$9HJ3aIOU.findElements(Unknown Source)
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findElementByNormalMethods(WebUiCommonHelper.java:1063)
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findElementsBySelectedMethod(WebUiCommonHelper.java:954)
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findElementsBySelectedMethod(WebUiCommonHelper.java:936)
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findElementsBySelectedMethod(WebUiCommonHelper.java:931)
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findElementsByDefault(WebUiCommonHelper.java:927)
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElements(WebUiCommonHelper.java:759)
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1447)
+	at com.kms.katalon.core.webui.keyword.builtin.FindWebElementKeyword$_findWebElement_closure1.doCall(FindWebElementKeyword.groovy:77)
+	at com.kms.katalon.core.webui.keyword.builtin.FindWebElementKeyword$_findWebElement_closure1.call(FindWebElementKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:35)
+	at com.kms.katalon.core.webui.keyword.builtin.FindWebElementKeyword.findWebElement(FindWebElementKeyword.groovy:86)
+	at com.kms.katalon.core.webui.keyword.builtin.FindWebElementKeyword.execute(FindWebElementKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.findWebElement(WebUiBuiltInKeywords.groovy:2919)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.findWebElement(WebUiBuiltInKeywords.groovy:2918)
+	at Script1747760390357.run(Script1747760390357.groovy:64)
+	... 15 more
+)
+2025-05-23 01:02:19.281 ERROR c.k.katalon.core.main.TestCaseExecutor   - ❌ Test Cases/MakeAppointment/TC_APPT_06 FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Cannot find web element by test object Object Repository/AppointmentPage/CommentField
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:117)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:43)
+	at com.kms.katalon.core.webui.keyword.builtin.FindWebElementKeyword.findWebElement(FindWebElementKeyword.groovy:86)
+	at com.kms.katalon.core.webui.keyword.builtin.FindWebElementKeyword.execute(FindWebElementKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.findWebElement(WebUiBuiltInKeywords.groovy:2919)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.findWebElement(WebUiBuiltInKeywords.groovy:2918)
+	at TC_APPT_06.run(TC_APPT_06:64)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:486)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:477)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:456)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:160)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:107)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:186)
+	at TempTestSuite1747936818314.run(TempTestSuite1747936818314.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.7.5', java.version: '17.0.14'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Command: [b2fb24b3f6fd7c410c947c2090629d1e, findElements {using=xpath, value=//*[@id='txt_comment']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: /var/folders/_z/5xqwqgjj53g...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63334}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:63334/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: ignore, webSocketUrl: ws://localhost:11704/sessio..., webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b2fb24b3f6fd7c410c947c2090629d1e
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElements(ElementLocation.java:182)
+	at org.openqa.selenium.remote.ElementLocation.findElements(ElementLocation.java:103)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:381)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:375)
+	at jdk.internal.reflect.GeneratedMethodAccessor17.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at org.openqa.selenium.support.decorators.WebDriverDecorator.call(WebDriverDecorator.java:315)
+	at org.openqa.selenium.support.decorators.DefaultDecorated.call(DefaultDecorated.java:48)
+	at org.openqa.selenium.support.decorators.WebDriverDecorator.lambda$createProxyFactory$3(WebDriverDecorator.java:405)
+	at org.openqa.selenium.remote.RemoteWebDriver$ByteBuddy$9HJ3aIOU.findElements(Unknown Source)
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findElementByNormalMethods(WebUiCommonHelper.java:1063)
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findElementsBySelectedMethod(WebUiCommonHelper.java:954)
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findElementsBySelectedMethod(WebUiCommonHelper.java:936)
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findElementsBySelectedMethod(WebUiCommonHelper.java:931)
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findElementsByDefault(WebUiCommonHelper.java:927)
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElements(WebUiCommonHelper.java:759)
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1447)
+	at com.kms.katalon.core.webui.keyword.builtin.FindWebElementKeyword$_findWebElement_closure1.doCall(FindWebElementKeyword.groovy:77)
+	at com.kms.katalon.core.webui.keyword.builtin.FindWebElementKeyword$_findWebElement_closure1.call(FindWebElementKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:35)
+	... 21 more
+
+2025-05-23 01:02:19.285 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/MakeAppointment/TC_APPT_06
+2025-05-23 01:02:19.288 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2025-05-23 01:02:19.288 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/MakeAppointment/TC_APPT_01
+2025-05-23 01:02:19.337 DEBUG testcase.TC_APPT_01                      - 1: callTestCase(findTestCase("Login/TC_LOGIN_01"), [:], STOP_ON_FAILURE)
+2025-05-23 01:02:19.393 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2025-05-23 01:02:19.393 INFO  c.k.katalon.core.main.TestCaseExecutor   - CALL Test Cases/Login/TC_LOGIN_01
+2025-05-23 01:02:19.403 DEBUG testcase.TC_LOGIN_01                     - 1: openBrowser("")
+2025-05-23 01:02:19.408 WARN  c.k.k.core.webui.driver.DriverFactory    - A browser is already opened. Closing browser and opening a new one
+2025-05-23 01:02:19.423 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Chrome' driver
+2025-05-23 01:02:19.424 INFO  c.k.k.core.webui.driver.DriverFactory    - Action delay is set to 0 milliseconds
+May 23, 2025 1:02:20 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 136
+May 23, 2025 1:02:20 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 136.0.7103.114. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.28.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+2025-05-23 01:02:20.873 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = 25fe3d0b1d5d7eb55f695afbdc08b3d7
+2025-05-23 01:02:20.873 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Chrome 136.0.7103.114
+2025-05-23 01:02:20.874 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Mac OS X
+2025-05-23 01:02:20.874 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 4.28.1
+2025-05-23 01:02:20.875 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList="", isApplyToDesiredCapabilities=true }
+2025-05-23 01:02:20.892 DEBUG testcase.TC_LOGIN_01                     - 2: navigateToUrl(baseUrl)
+2025-05-23 01:02:25.980 DEBUG testcase.TC_LOGIN_01                     - 3: click(findTestObject("LoginPage/IconMenu"))
+2025-05-23 01:02:26.293 DEBUG testcase.TC_LOGIN_01                     - 4: click(findTestObject("LoginPage/LoginButton"))
+2025-05-23 01:02:27.135 DEBUG testcase.TC_LOGIN_01                     - 5: testData = findTestData("TestData1")
+2025-05-23 01:02:27.140 DEBUG testcase.TC_LOGIN_01                     - 6: username = testData.getValue("username", 1)
+2025-05-23 01:02:27.141 DEBUG testcase.TC_LOGIN_01                     - 7: password = testData.getValue("password", 1)
+2025-05-23 01:02:27.142 DEBUG testcase.TC_LOGIN_01                     - 8: setText(findTestObject("LoginPage/UsernameField"), username)
+2025-05-23 01:02:27.953 DEBUG testcase.TC_LOGIN_01                     - 9: setText(findTestObject("LoginPage/PasswordField"), password)
+2025-05-23 01:02:28.474 DEBUG testcase.TC_LOGIN_01                     - 10: click(findTestObject("LoginPage/LoginSubmitButton"))
+2025-05-23 01:02:29.604 DEBUG testcase.TC_LOGIN_01                     - 11: verifyElementPresent(findTestObject("AppointmentPage/ApplyButton"), 5)
+2025-05-23 01:02:30.047 DEBUG testcase.TC_LOGIN_01                     - 12: takeFullPageScreenshot()
+2025-05-23 01:02:31.908 INFO  c.kms.katalon.core.webui.util.FileUtil   - 0 hidden object(s)
+2025-05-23 01:02:32.433 INFO  c.k.katalon.core.main.TestCaseExecutor   - END CALL Test Cases/Login/TC_LOGIN_01
+2025-05-23 01:02:32.433 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2025-05-23 01:02:32.434 DEBUG testcase.TC_APPT_01                      - 2: click(findTestObject("LoginPage/MakeAppointment"))
+2025-05-23 01:02:32.728 DEBUG testcase.TC_APPT_01                      - 3: takeFullPageScreenshot()
+2025-05-23 01:02:34.556 INFO  c.kms.katalon.core.webui.util.FileUtil   - 0 hidden object(s)
+2025-05-23 01:02:35.118 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/MakeAppointment/TC_APPT_01
+2025-05-23 01:02:35.121 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2025-05-23 01:02:35.121 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/MakeAppointment/TC_APPT_02
+2025-05-23 01:02:35.179 DEBUG testcase.TC_APPT_02                      - 1: callTestCase(findTestCase("Login/TC_LOGIN_01"), [:], STOP_ON_FAILURE)
+2025-05-23 01:02:35.238 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2025-05-23 01:02:35.238 INFO  c.k.katalon.core.main.TestCaseExecutor   - CALL Test Cases/Login/TC_LOGIN_01
+2025-05-23 01:02:35.249 DEBUG testcase.TC_LOGIN_01                     - 1: openBrowser("")
+2025-05-23 01:02:35.253 WARN  c.k.k.core.webui.driver.DriverFactory    - A browser is already opened. Closing browser and opening a new one
+2025-05-23 01:02:35.433 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Chrome' driver
+2025-05-23 01:02:35.435 INFO  c.k.k.core.webui.driver.DriverFactory    - Action delay is set to 0 milliseconds
+May 23, 2025 1:02:36 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 136
+May 23, 2025 1:02:36 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 136.0.7103.114. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.28.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+2025-05-23 01:02:36.782 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = ee6f001b20979f8125fd7950c7f93440
+2025-05-23 01:02:36.782 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Chrome 136.0.7103.114
+2025-05-23 01:02:36.783 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Mac OS X
+2025-05-23 01:02:36.783 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 4.28.1
+2025-05-23 01:02:36.784 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList="", isApplyToDesiredCapabilities=true }
+2025-05-23 01:02:36.800 DEBUG testcase.TC_LOGIN_01                     - 2: navigateToUrl(baseUrl)
+2025-05-23 01:02:40.466 DEBUG testcase.TC_LOGIN_01                     - 3: click(findTestObject("LoginPage/IconMenu"))
+2025-05-23 01:02:40.778 DEBUG testcase.TC_LOGIN_01                     - 4: click(findTestObject("LoginPage/LoginButton"))
+2025-05-23 01:02:41.556 DEBUG testcase.TC_LOGIN_01                     - 5: testData = findTestData("TestData1")
+2025-05-23 01:02:41.562 DEBUG testcase.TC_LOGIN_01                     - 6: username = testData.getValue("username", 1)
+2025-05-23 01:02:41.563 DEBUG testcase.TC_LOGIN_01                     - 7: password = testData.getValue("password", 1)
+2025-05-23 01:02:41.564 DEBUG testcase.TC_LOGIN_01                     - 8: setText(findTestObject("LoginPage/UsernameField"), username)
+2025-05-23 01:02:42.370 DEBUG testcase.TC_LOGIN_01                     - 9: setText(findTestObject("LoginPage/PasswordField"), password)
+2025-05-23 01:02:42.888 DEBUG testcase.TC_LOGIN_01                     - 10: click(findTestObject("LoginPage/LoginSubmitButton"))
+2025-05-23 01:02:43.952 DEBUG testcase.TC_LOGIN_01                     - 11: verifyElementPresent(findTestObject("AppointmentPage/ApplyButton"), 5)
+2025-05-23 01:02:44.387 DEBUG testcase.TC_LOGIN_01                     - 12: takeFullPageScreenshot()
+2025-05-23 01:02:46.256 INFO  c.kms.katalon.core.webui.util.FileUtil   - 0 hidden object(s)
+2025-05-23 01:02:46.836 INFO  c.k.katalon.core.main.TestCaseExecutor   - END CALL Test Cases/Login/TC_LOGIN_01
+2025-05-23 01:02:46.836 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2025-05-23 01:02:46.837 DEBUG testcase.TC_APPT_02                      - 2: facility = findTestData("AppointmentData").getValue("Facility", 1)
+2025-05-23 01:02:46.842 DEBUG testcase.TC_APPT_02                      - 3: readmission = findTestData("AppointmentData").getValue("ApplyReadmission", 1)
+2025-05-23 01:02:46.847 DEBUG testcase.TC_APPT_02                      - 4: program = findTestData("AppointmentData").getValue("Program", 1)
+2025-05-23 01:02:46.851 DEBUG testcase.TC_APPT_02                      - 5: visitDate = findTestData("AppointmentData").getValue("VisitDate", 1)
+2025-05-23 01:02:46.857 DEBUG testcase.TC_APPT_02                      - 6: comment = findTestData("AppointmentData").getValue("Comment", 1)
+2025-05-23 01:02:46.863 DEBUG testcase.TC_APPT_02                      - 7: selectOptionByLabel(findTestObject("AppointmentPage/FacilityDropdown"), facility, false)
+2025-05-23 01:02:47.363 DEBUG testcase.TC_APPT_02                      - 8: if (readmission == "Yes")
+2025-05-23 01:02:47.364 DEBUG testcase.TC_APPT_02                      - 1: check(findTestObject("AppointmentPage/CheckboxReadmission"))
+2025-05-23 01:02:47.653 DEBUG testcase.TC_APPT_02                      - 2: delay(2)
+2025-05-23 01:02:49.658 DEBUG testcase.TC_APPT_02                      - 9: switch (program)
+2025-05-23 01:02:49.660 DEBUG testcase.TC_APPT_02                      - 1: case "Medicaid":
+2025-05-23 01:02:49.662 DEBUG testcase.TC_APPT_02                      - 1: click(findTestObject("AppointmentPage/RadioMedicaid"))
+2025-05-23 01:02:49.944 DEBUG testcase.TC_APPT_02                      - 2: break
+2025-05-23 01:02:49.945 DEBUG testcase.TC_APPT_02                      - 10: setText(findTestObject("AppointmentPage/CalendarInput"), visitDate)
+2025-05-23 01:02:50.511 DEBUG testcase.TC_APPT_02                      - 11: setText(findTestObject("AppointmentPage/CommentField"), comment)
+2025-05-23 01:02:51.248 DEBUG testcase.TC_APPT_02                      - 12: click(findTestObject("AppointmentPage/ApplyButton"))
+2025-05-23 01:02:51.853 DEBUG testcase.TC_APPT_02                      - 13: verifyElementPresent(findTestObject("AppointmentPage/GoToHomepage"), 5)
+2025-05-23 01:02:52.374 DEBUG testcase.TC_APPT_02                      - 14: click(findTestObject("AppointmentPage/GoToHomepage"))
+2025-05-23 01:02:53.044 DEBUG testcase.TC_APPT_02                      - 15: verifyElementPresent(findTestObject("LoginPage/MakeAppointment"), 5)
+2025-05-23 01:02:53.486 DEBUG testcase.TC_APPT_02                      - 16: takeScreenshot()
+2025-05-23 01:02:54.613 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/MakeAppointment/TC_APPT_02
+2025-05-23 01:02:54.615 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2025-05-23 01:02:54.616 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/MakeAppointment/TC_APPT_05
+2025-05-23 01:02:54.665 DEBUG testcase.TC_APPT_05                      - 1: callTestCase(findTestCase("Login/TC_LOGIN_01"), [:], STOP_ON_FAILURE)
+2025-05-23 01:02:54.726 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2025-05-23 01:02:54.726 INFO  c.k.katalon.core.main.TestCaseExecutor   - CALL Test Cases/Login/TC_LOGIN_01
+2025-05-23 01:02:54.739 DEBUG testcase.TC_LOGIN_01                     - 1: openBrowser("")
+2025-05-23 01:02:54.742 WARN  c.k.k.core.webui.driver.DriverFactory    - A browser is already opened. Closing browser and opening a new one
+2025-05-23 01:02:54.924 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Chrome' driver
+2025-05-23 01:02:54.926 INFO  c.k.k.core.webui.driver.DriverFactory    - Action delay is set to 0 milliseconds
+May 23, 2025 1:02:56 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 136
+May 23, 2025 1:02:56 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 136.0.7103.114. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.28.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+2025-05-23 01:02:56.251 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = 47e6e5f744c3a5851f5e9f8d2beb3f7f
+2025-05-23 01:02:56.251 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Chrome 136.0.7103.114
+2025-05-23 01:02:56.251 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Mac OS X
+2025-05-23 01:02:56.252 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 4.28.1
+2025-05-23 01:02:56.252 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList="", isApplyToDesiredCapabilities=true }
+2025-05-23 01:02:56.269 DEBUG testcase.TC_LOGIN_01                     - 2: navigateToUrl(baseUrl)
+2025-05-23 01:02:59.707 DEBUG testcase.TC_LOGIN_01                     - 3: click(findTestObject("LoginPage/IconMenu"))
+2025-05-23 01:03:00.011 DEBUG testcase.TC_LOGIN_01                     - 4: click(findTestObject("LoginPage/LoginButton"))
+2025-05-23 01:03:00.810 DEBUG testcase.TC_LOGIN_01                     - 5: testData = findTestData("TestData1")
+2025-05-23 01:03:00.814 DEBUG testcase.TC_LOGIN_01                     - 6: username = testData.getValue("username", 1)
+2025-05-23 01:03:00.815 DEBUG testcase.TC_LOGIN_01                     - 7: password = testData.getValue("password", 1)
+2025-05-23 01:03:00.815 DEBUG testcase.TC_LOGIN_01                     - 8: setText(findTestObject("LoginPage/UsernameField"), username)
+2025-05-23 01:03:01.619 DEBUG testcase.TC_LOGIN_01                     - 9: setText(findTestObject("LoginPage/PasswordField"), password)
+2025-05-23 01:03:02.147 DEBUG testcase.TC_LOGIN_01                     - 10: click(findTestObject("LoginPage/LoginSubmitButton"))
+2025-05-23 01:03:03.074 DEBUG testcase.TC_LOGIN_01                     - 11: verifyElementPresent(findTestObject("AppointmentPage/ApplyButton"), 5)
+2025-05-23 01:03:03.547 DEBUG testcase.TC_LOGIN_01                     - 12: takeFullPageScreenshot()
+2025-05-23 01:03:05.389 INFO  c.kms.katalon.core.webui.util.FileUtil   - 0 hidden object(s)
+2025-05-23 01:03:05.915 INFO  c.k.katalon.core.main.TestCaseExecutor   - END CALL Test Cases/Login/TC_LOGIN_01
+2025-05-23 01:03:05.916 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2025-05-23 01:03:05.917 DEBUG testcase.TC_APPT_05                      - 2: facility = findTestData("AppointmentData").getValue("Facility", 1)
+2025-05-23 01:03:05.921 DEBUG testcase.TC_APPT_05                      - 3: readmission = findTestData("AppointmentData").getValue("ApplyReadmission", 1)
+2025-05-23 01:03:05.924 DEBUG testcase.TC_APPT_05                      - 4: program = findTestData("AppointmentData").getValue("Program", 1)
+2025-05-23 01:03:05.927 DEBUG testcase.TC_APPT_05                      - 5: visitDate = findTestData("AppointmentData").getValue("VisitDate", 1)
+2025-05-23 01:03:05.934 DEBUG testcase.TC_APPT_05                      - 6: comment = findTestData("AppointmentData").getValue("Comment", 1)
+2025-05-23 01:03:05.937 DEBUG testcase.TC_APPT_05                      - 7: selectOptionByLabel(findTestObject("AppointmentPage/FacilityDropdown"), facility, false)
+2025-05-23 01:03:06.430 DEBUG testcase.TC_APPT_05                      - 8: if (readmission == "Yes")
+2025-05-23 01:03:06.432 DEBUG testcase.TC_APPT_05                      - 1: check(findTestObject("AppointmentPage/CheckboxReadmission"))
+2025-05-23 01:03:06.720 DEBUG testcase.TC_APPT_05                      - 2: delay(2)
+2025-05-23 01:03:08.728 DEBUG testcase.TC_APPT_05                      - 9: switch (program)
+2025-05-23 01:03:08.729 DEBUG testcase.TC_APPT_05                      - 1: case "Medicaid":
+2025-05-23 01:03:08.730 DEBUG testcase.TC_APPT_05                      - 1: click(findTestObject("AppointmentPage/RadioMedicaid"))
+2025-05-23 01:03:09.005 DEBUG testcase.TC_APPT_05                      - 2: break
+2025-05-23 01:03:09.006 DEBUG testcase.TC_APPT_05                      - 10: setText(findTestObject("AppointmentPage/CalendarInput"), visitDate)
+2025-05-23 01:03:09.570 DEBUG testcase.TC_APPT_05                      - 11: setText(findTestObject("AppointmentPage/CommentField"), comment)
+2025-05-23 01:03:10.301 DEBUG testcase.TC_APPT_05                      - 12: delay(2)
+2025-05-23 01:03:12.307 DEBUG testcase.TC_APPT_05                      - 13: refresh()
+2025-05-23 01:03:12.731 DEBUG testcase.TC_APPT_05                      - 14: verifyElementPresent(findTestObject("AppointmentPage/ApplyButton"), 5)
+2025-05-23 01:03:13.162 DEBUG testcase.TC_APPT_05                      - 15: takeScreenshot()
+2025-05-23 01:03:13.649 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/MakeAppointment/TC_APPT_05
+2025-05-23 01:03:13.844 INFO  c.k.katalon.core.main.TestSuiteExecutor  - --------------------
+2025-05-23 01:03:13.845 INFO  c.k.katalon.core.main.TestSuiteExecutor  - END Test Suites/MakeAppointment
+2025-05-23 01:03:13.845 INFO  c.k.katalon.core.main.TestSuiteExecutor  - ====================
