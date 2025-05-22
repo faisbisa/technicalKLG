@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC_APPT_03</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>b5eb961f-8220-44c2-be7c-3b3a3d56b2b1</testCaseGuid>
-</TestCaseEntity>
