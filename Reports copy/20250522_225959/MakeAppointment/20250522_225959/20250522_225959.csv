@@ -1,0 +1,92 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+MakeAppointment,Chrome 136.0.7103.114,,,22-05-2025 23:00:04,22-05-2025 23:02:06,2m - 2.192s,FAILED
+,,,,,,,
+Test Cases/MakeAppointment/TC_APPT_04,Chrome 136.0.7103.114,,,22-05-2025 23:00:05,22-05-2025 23:00:23,18.291s,PASSED
+"callTestCase(findTestCase(""Login/TC_LOGIN_01""), [:], STOP_ON_FAILURE)",Chrome 136.0.7103.114,,,22-05-2025 23:00:05,22-05-2025 23:00:20,14.779s,PASSED
+"facility = findTestData(""AppointmentData"").getValue(""Facility"", 1)",Chrome 136.0.7103.114,,,22-05-2025 23:00:20,22-05-2025 23:00:20,0.005s,PASSED
+"readmission = findTestData(""AppointmentData"").getValue(""ApplyReadmission"", 1)",Chrome 136.0.7103.114,,,22-05-2025 23:00:20,22-05-2025 23:00:20,0.004s,PASSED
+"program = findTestData(""AppointmentData"").getValue(""Program"", 1)",Chrome 136.0.7103.114,,,22-05-2025 23:00:20,22-05-2025 23:00:20,0.005s,PASSED
+"visitDate = findTestData(""AppointmentData"").getValue(""VisitDate"", 2)",Chrome 136.0.7103.114,,,22-05-2025 23:00:20,22-05-2025 23:00:20,0.004s,PASSED
+"comment = findTestData(""AppointmentData"").getValue(""Comment"", 1)",Chrome 136.0.7103.114,,,22-05-2025 23:00:20,22-05-2025 23:00:20,0.005s,PASSED
+"selectOptionByLabel(findTestObject(""AppointmentPage/FacilityDropdown""), facility, false)",Chrome 136.0.7103.114,,,22-05-2025 23:00:20,22-05-2025 23:00:20,0.506s,PASSED
+"if (readmission == ""Yes"")",Chrome 136.0.7103.114,,,22-05-2025 23:00:20,22-05-2025 23:00:21,0.309s,PASSED
+switch (program),Chrome 136.0.7103.114,,,22-05-2025 23:00:21,22-05-2025 23:00:21,0.296s,PASSED
+"setText(findTestObject(""AppointmentPage/CommentField""), comment)",Chrome 136.0.7103.114,,,22-05-2025 23:00:21,22-05-2025 23:00:21,0.533s,PASSED
+"click(findTestObject(""AppointmentPage/ApplyButton""))",Chrome 136.0.7103.114,,,22-05-2025 23:00:21,22-05-2025 23:00:22,0.337s,PASSED
+"verifyElementPresent(findTestObject(""AppointmentPage/VerifyNotInputDate""), 5)",Chrome 136.0.7103.114,,,22-05-2025 23:00:22,22-05-2025 23:00:22,0.456s,PASSED
+takeScreenshot(),Chrome 136.0.7103.114,,,22-05-2025 23:00:22,22-05-2025 23:00:23,0.611s,PASSED
+,,,,,,,
+Test Cases/MakeAppointment/TC_APPT_03,Chrome 136.0.7103.114,,,22-05-2025 23:00:23,22-05-2025 23:00:44,20.951s,PASSED
+"callTestCase(findTestCase(""Login/TC_LOGIN_01""), [:], STOP_ON_FAILURE)",Chrome 136.0.7103.114,,,22-05-2025 23:00:23,22-05-2025 23:00:36,13.329s,PASSED
+"facility = findTestData(""AppointmentData"").getValue(""Facility"", 1)",Chrome 136.0.7103.114,,,22-05-2025 23:00:36,22-05-2025 23:00:36,0.005s,PASSED
+"readmission = findTestData(""AppointmentData"").getValue(""ApplyReadmission"", 1)",Chrome 136.0.7103.114,,,22-05-2025 23:00:36,22-05-2025 23:00:36,0.005s,PASSED
+"program = findTestData(""AppointmentData"").getValue(""Program"", 1)",Chrome 136.0.7103.114,,,22-05-2025 23:00:36,22-05-2025 23:00:36,0.006s,PASSED
+"visitDate = findTestData(""AppointmentData"").getValue(""VisitDate"", 2)",Chrome 136.0.7103.114,,,22-05-2025 23:00:36,22-05-2025 23:00:36,0.004s,PASSED
+"comment = findTestData(""AppointmentData"").getValue(""Comment"", 1)",Chrome 136.0.7103.114,,,22-05-2025 23:00:36,22-05-2025 23:00:36,0.004s,PASSED
+"selectOptionByLabel(findTestObject(""AppointmentPage/FacilityDropdown""), facility, false)",Chrome 136.0.7103.114,,,22-05-2025 23:00:36,22-05-2025 23:00:37,0.490s,PASSED
+"if (readmission == ""Yes"")",Chrome 136.0.7103.114,,,22-05-2025 23:00:37,22-05-2025 23:00:37,0.291s,PASSED
+switch (program),Chrome 136.0.7103.114,,,22-05-2025 23:00:37,22-05-2025 23:00:37,0.288s,PASSED
+"setText(findTestObject(""AppointmentPage/CalendarInput""), visitDate)",Chrome 136.0.7103.114,,,22-05-2025 23:00:37,22-05-2025 23:00:38,0.571s,PASSED
+delay(2),Chrome 136.0.7103.114,,,22-05-2025 23:00:38,22-05-2025 23:00:40,2.026s,PASSED
+"setText(findTestObject(""AppointmentPage/CommentField""), comment)",Chrome 136.0.7103.114,,,22-05-2025 23:00:40,22-05-2025 23:00:41,0.528s,PASSED
+"click(findTestObject(""AppointmentPage/ApplyButton""))",Chrome 136.0.7103.114,,,22-05-2025 23:00:41,22-05-2025 23:00:41,0.644s,PASSED
+"verifyElementPresent(findTestObject(""AppointmentPage/GoToHomepage""), 5)",Chrome 136.0.7103.114,,,22-05-2025 23:00:41,22-05-2025 23:00:42,0.430s,PASSED
+"click(findTestObject(""AppointmentPage/GoToHomepage""))",Chrome 136.0.7103.114,,,22-05-2025 23:00:42,22-05-2025 23:00:42,0.614s,PASSED
+"verifyElementPresent(findTestObject(""LoginPage/MakeAppointment""), 5)",Chrome 136.0.7103.114,,,22-05-2025 23:00:42,22-05-2025 23:00:43,0.443s,PASSED
+takeScreenshot(),Chrome 136.0.7103.114,,,22-05-2025 23:00:43,22-05-2025 23:00:44,1.132s,PASSED
+,,,,,,,
+Test Cases/MakeAppointment/TC_APPT_06,Chrome 136.0.7103.114,,,22-05-2025 23:00:44,22-05-2025 23:01:11,27.248s,FAILED
+"callTestCase(findTestCase(""Login/TC_LOGIN_01""), [:], STOP_ON_FAILURE)",Chrome 136.0.7103.114,,,22-05-2025 23:00:44,22-05-2025 23:00:56,12.501s,PASSED
+"facility = findTestData(""AppointmentData"").getValue(""Facility"", 1)",Chrome 136.0.7103.114,,,22-05-2025 23:00:56,22-05-2025 23:00:56,0.003s,PASSED
+"readmission = findTestData(""AppointmentData"").getValue(""ApplyReadmission"", 1)",Chrome 136.0.7103.114,,,22-05-2025 23:00:56,22-05-2025 23:00:56,0.003s,PASSED
+"program = findTestData(""AppointmentData"").getValue(""Program"", 1)",Chrome 136.0.7103.114,,,22-05-2025 23:00:56,22-05-2025 23:00:56,0.003s,PASSED
+"visitDate = findTestData(""AppointmentData"").getValue(""VisitDate"", 1)",Chrome 136.0.7103.114,,,22-05-2025 23:00:56,22-05-2025 23:00:56,0.003s,PASSED
+"comment = findTestData(""AppointmentData"").getValue(""Comment"", 3)",Chrome 136.0.7103.114,,,22-05-2025 23:00:56,22-05-2025 23:00:56,0.003s,PASSED
+"selectOptionByLabel(findTestObject(""AppointmentPage/FacilityDropdown""), facility, false)",Chrome 136.0.7103.114,,,22-05-2025 23:00:56,22-05-2025 23:00:57,0.495s,PASSED
+"if (readmission == ""Yes"")",Chrome 136.0.7103.114,,,22-05-2025 23:00:57,22-05-2025 23:00:59,2.296s,PASSED
+switch (program),Chrome 136.0.7103.114,,,22-05-2025 23:00:59,22-05-2025 23:00:59,0.299s,PASSED
+"setText(findTestObject(""AppointmentPage/CalendarInput""), visitDate)",Chrome 136.0.7103.114,,,22-05-2025 23:00:59,22-05-2025 23:01:00,0.569s,PASSED
+"setText(findTestObject(""AppointmentPage/CommentField""), comment)",Chrome 136.0.7103.114,,,22-05-2025 23:01:00,22-05-2025 23:01:02,1.811s,PASSED
+delay(2),Chrome 136.0.7103.114,,,22-05-2025 23:01:02,22-05-2025 23:01:04,2.009s,PASSED
+"click(findTestObject(""AppointmentPage/ApplyButton""))",Chrome 136.0.7103.114,,,22-05-2025 23:01:04,22-05-2025 23:01:04,0.608s,PASSED
+"verifyElementPresent(findTestObject(""AppointmentPage/ApplyButton""), 5)",Chrome 136.0.7103.114,,,22-05-2025 23:01:04,22-05-2025 23:01:11,6.582s,FAILED
+,,,,,,,
+Test Cases/MakeAppointment/TC_APPT_01,Chrome 136.0.7103.114,,,22-05-2025 23:01:11,22-05-2025 23:01:26,14.454s,PASSED
+"callTestCase(findTestCase(""Login/TC_LOGIN_01""), [:], STOP_ON_FAILURE)",Chrome 136.0.7103.114,,,22-05-2025 23:01:11,22-05-2025 23:01:23,11.681s,PASSED
+"click(findTestObject(""LoginPage/MakeAppointment""))",Chrome 136.0.7103.114,,,22-05-2025 23:01:23,22-05-2025 23:01:23,0.276s,PASSED
+takeFullPageScreenshot(),Chrome 136.0.7103.114,,,22-05-2025 23:01:23,22-05-2025 23:01:26,2.457s,PASSED
+,,,,,,,
+Test Cases/MakeAppointment/TC_APPT_02,Chrome 136.0.7103.114,,,22-05-2025 23:01:26,22-05-2025 23:01:46,20.602s,PASSED
+"callTestCase(findTestCase(""Login/TC_LOGIN_01""), [:], STOP_ON_FAILURE)",Chrome 136.0.7103.114,,,22-05-2025 23:01:26,22-05-2025 23:01:38,12.785s,PASSED
+"facility = findTestData(""AppointmentData"").getValue(""Facility"", 1)",Chrome 136.0.7103.114,,,22-05-2025 23:01:38,22-05-2025 23:01:38,0.003s,PASSED
+"readmission = findTestData(""AppointmentData"").getValue(""ApplyReadmission"", 1)",Chrome 136.0.7103.114,,,22-05-2025 23:01:38,22-05-2025 23:01:38,0.003s,PASSED
+"program = findTestData(""AppointmentData"").getValue(""Program"", 1)",Chrome 136.0.7103.114,,,22-05-2025 23:01:38,22-05-2025 23:01:38,0.003s,PASSED
+"visitDate = findTestData(""AppointmentData"").getValue(""VisitDate"", 1)",Chrome 136.0.7103.114,,,22-05-2025 23:01:38,22-05-2025 23:01:38,0.002s,PASSED
+"comment = findTestData(""AppointmentData"").getValue(""Comment"", 1)",Chrome 136.0.7103.114,,,22-05-2025 23:01:38,22-05-2025 23:01:38,0.002s,PASSED
+"selectOptionByLabel(findTestObject(""AppointmentPage/FacilityDropdown""), facility, false)",Chrome 136.0.7103.114,,,22-05-2025 23:01:38,22-05-2025 23:01:39,0.487s,PASSED
+"if (readmission == ""Yes"")",Chrome 136.0.7103.114,,,22-05-2025 23:01:39,22-05-2025 23:01:41,2.295s,PASSED
+switch (program),Chrome 136.0.7103.114,,,22-05-2025 23:01:41,22-05-2025 23:01:41,0.286s,PASSED
+"setText(findTestObject(""AppointmentPage/CalendarInput""), visitDate)",Chrome 136.0.7103.114,,,22-05-2025 23:01:41,22-05-2025 23:01:42,0.566s,PASSED
+"setText(findTestObject(""AppointmentPage/CommentField""), comment)",Chrome 136.0.7103.114,,,22-05-2025 23:01:42,22-05-2025 23:01:43,0.740s,PASSED
+"click(findTestObject(""AppointmentPage/ApplyButton""))",Chrome 136.0.7103.114,,,22-05-2025 23:01:43,22-05-2025 23:01:43,0.587s,PASSED
+"verifyElementPresent(findTestObject(""AppointmentPage/GoToHomepage""), 5)",Chrome 136.0.7103.114,,,22-05-2025 23:01:43,22-05-2025 23:01:44,0.459s,PASSED
+"click(findTestObject(""AppointmentPage/GoToHomepage""))",Chrome 136.0.7103.114,,,22-05-2025 23:01:44,22-05-2025 23:01:45,0.708s,PASSED
+"verifyElementPresent(findTestObject(""LoginPage/MakeAppointment""), 5)",Chrome 136.0.7103.114,,,22-05-2025 23:01:45,22-05-2025 23:01:45,0.470s,PASSED
+takeScreenshot(),Chrome 136.0.7103.114,,,22-05-2025 23:01:45,22-05-2025 23:01:46,1.109s,PASSED
+,,,,,,,
+Test Cases/MakeAppointment/TC_APPT_05,Chrome 136.0.7103.114,,,22-05-2025 23:01:46,22-05-2025 23:02:06,20.062s,PASSED
+"callTestCase(findTestCase(""Login/TC_LOGIN_01""), [:], STOP_ON_FAILURE)",Chrome 136.0.7103.114,,,22-05-2025 23:01:46,22-05-2025 23:01:58,12.286s,PASSED
+"facility = findTestData(""AppointmentData"").getValue(""Facility"", 1)",Chrome 136.0.7103.114,,,22-05-2025 23:01:58,22-05-2025 23:01:58,0.003s,PASSED
+"readmission = findTestData(""AppointmentData"").getValue(""ApplyReadmission"", 1)",Chrome 136.0.7103.114,,,22-05-2025 23:01:58,22-05-2025 23:01:58,0.003s,PASSED
+"program = findTestData(""AppointmentData"").getValue(""Program"", 1)",Chrome 136.0.7103.114,,,22-05-2025 23:01:58,22-05-2025 23:01:58,0.003s,PASSED
+"visitDate = findTestData(""AppointmentData"").getValue(""VisitDate"", 1)",Chrome 136.0.7103.114,,,22-05-2025 23:01:58,22-05-2025 23:01:58,0.003s,PASSED
+"comment = findTestData(""AppointmentData"").getValue(""Comment"", 1)",Chrome 136.0.7103.114,,,22-05-2025 23:01:58,22-05-2025 23:01:58,0.003s,PASSED
+"selectOptionByLabel(findTestObject(""AppointmentPage/FacilityDropdown""), facility, false)",Chrome 136.0.7103.114,,,22-05-2025 23:01:58,22-05-2025 23:01:59,0.486s,PASSED
+"if (readmission == ""Yes"")",Chrome 136.0.7103.114,,,22-05-2025 23:01:59,22-05-2025 23:02:01,2.298s,PASSED
+switch (program),Chrome 136.0.7103.114,,,22-05-2025 23:02:01,22-05-2025 23:02:02,0.287s,PASSED
+"setText(findTestObject(""AppointmentPage/CalendarInput""), visitDate)",Chrome 136.0.7103.114,,,22-05-2025 23:02:02,22-05-2025 23:02:02,0.565s,PASSED
+"setText(findTestObject(""AppointmentPage/CommentField""), comment)",Chrome 136.0.7103.114,,,22-05-2025 23:02:02,22-05-2025 23:02:03,0.739s,PASSED
+delay(2),Chrome 136.0.7103.114,,,22-05-2025 23:02:03,22-05-2025 23:02:05,2.007s,PASSED
+refresh(),Chrome 136.0.7103.114,,,22-05-2025 23:02:05,22-05-2025 23:02:05,0.423s,PASSED
+"verifyElementPresent(findTestObject(""AppointmentPage/ApplyButton""), 5)",Chrome 136.0.7103.114,,,22-05-2025 23:02:05,22-05-2025 23:02:06,0.431s,PASSED
+takeScreenshot(),Chrome 136.0.7103.114,,,22-05-2025 23:02:06,22-05-2025 23:02:06,0.480s,PASSED

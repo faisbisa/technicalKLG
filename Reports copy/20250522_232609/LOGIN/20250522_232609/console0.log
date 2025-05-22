@@ -1,0 +1,140 @@
+2025-05-22 23:26:13.917 INFO  c.k.katalon.core.main.TestSuiteExecutor  - START Test Suites/LOGIN
+2025-05-22 23:26:14.022 INFO  c.k.katalon.core.main.TestSuiteExecutor  - userFullName = fais alkurnis
+2025-05-22 23:26:14.023 INFO  c.k.katalon.core.main.TestSuiteExecutor  - projectName = SampleProject
+2025-05-22 23:26:14.024 INFO  c.k.katalon.core.main.TestSuiteExecutor  - hostName = user - localhost
+2025-05-22 23:26:14.024 INFO  c.k.katalon.core.main.TestSuiteExecutor  - os = Mac OS X 64bit
+2025-05-22 23:26:14.024 INFO  c.k.katalon.core.main.TestSuiteExecutor  - hostAddress = 127.0.0.1
+2025-05-22 23:26:14.025 INFO  c.k.katalon.core.main.TestSuiteExecutor  - katalonVersion = 10.2.0.0
+2025-05-22 23:26:14.410 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2025-05-22 23:26:14.410 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/Login/TC_LOGIN_01
+2025-05-22 23:26:14.777 DEBUG testcase.TC_LOGIN_01                     - 1: openBrowser("")
+2025-05-22 23:26:14.941 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Chrome' driver
+2025-05-22 23:26:14.983 INFO  c.k.k.core.webui.driver.DriverFactory    - Action delay is set to 0 milliseconds
+May 22, 2025 11:26:17 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 136
+May 22, 2025 11:26:17 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 136.0.7103.114. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.28.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+2025-05-22 23:26:17.463 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = f8884d83e1b5dc57da4dcd400c1f3517
+2025-05-22 23:26:17.464 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Chrome 136.0.7103.114
+2025-05-22 23:26:17.465 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Mac OS X
+2025-05-22 23:26:17.465 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 4.28.1
+2025-05-22 23:26:17.475 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList="", isApplyToDesiredCapabilities=true }
+2025-05-22 23:26:17.511 DEBUG testcase.TC_LOGIN_01                     - 2: navigateToUrl(baseUrl)
+2025-05-22 23:26:20.706 DEBUG testcase.TC_LOGIN_01                     - 3: click(findTestObject("LoginPage/IconMenu"))
+2025-05-22 23:26:21.085 DEBUG testcase.TC_LOGIN_01                     - 4: click(findTestObject("LoginPage/LoginButton"))
+2025-05-22 23:26:21.891 DEBUG testcase.TC_LOGIN_01                     - 5: testData = findTestData("TestData1")
+2025-05-22 23:26:21.914 DEBUG testcase.TC_LOGIN_01                     - 6: username = testData.getValue("username", 1)
+2025-05-22 23:26:21.939 DEBUG testcase.TC_LOGIN_01                     - 7: password = testData.getValue("password", 1)
+2025-05-22 23:26:21.942 DEBUG testcase.TC_LOGIN_01                     - 8: setText(findTestObject("LoginPage/UsernameField"), username)
+2025-05-22 23:26:22.661 DEBUG testcase.TC_LOGIN_01                     - 9: setText(findTestObject("LoginPage/PasswordField"), password)
+2025-05-22 23:26:23.216 DEBUG testcase.TC_LOGIN_01                     - 10: click(findTestObject("LoginPage/LoginSubmitButton"))
+2025-05-22 23:26:24.262 DEBUG testcase.TC_LOGIN_01                     - 11: verifyElementPresent(findTestObject("AppointmentPage/ApplyButton"), 5)
+2025-05-22 23:26:24.725 DEBUG testcase.TC_LOGIN_01                     - 12: takeFullPageScreenshot()
+2025-05-22 23:26:26.847 INFO  c.kms.katalon.core.webui.util.FileUtil   - 0 hidden object(s)
+2025-05-22 23:26:27.521 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/Login/TC_LOGIN_01
+2025-05-22 23:26:27.527 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2025-05-22 23:26:27.527 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/Login/TC_LOGIN_02
+2025-05-22 23:26:27.620 DEBUG testcase.TC_LOGIN_02                     - 1: openBrowser("")
+2025-05-22 23:26:27.636 WARN  c.k.k.core.webui.driver.DriverFactory    - A browser is already opened. Closing browser and opening a new one
+2025-05-22 23:26:27.851 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Chrome' driver
+2025-05-22 23:26:27.853 INFO  c.k.k.core.webui.driver.DriverFactory    - Action delay is set to 0 milliseconds
+May 22, 2025 11:26:29 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 136
+May 22, 2025 11:26:29 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 136.0.7103.114. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.28.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+2025-05-22 23:26:29.576 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = 1d3ae84ca55bb67e41da92b39d41d01d
+2025-05-22 23:26:29.577 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Chrome 136.0.7103.114
+2025-05-22 23:26:29.578 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Mac OS X
+2025-05-22 23:26:29.578 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 4.28.1
+2025-05-22 23:26:29.579 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList="", isApplyToDesiredCapabilities=true }
+2025-05-22 23:26:29.612 DEBUG testcase.TC_LOGIN_02                     - 2: navigateToUrl(baseUrl)
+2025-05-22 23:26:34.924 DEBUG testcase.TC_LOGIN_02                     - 3: click(findTestObject("LoginPage/IconMenu"))
+2025-05-22 23:26:35.251 DEBUG testcase.TC_LOGIN_02                     - 4: click(findTestObject("LoginPage/LoginButton"))
+2025-05-22 23:26:36.052 DEBUG testcase.TC_LOGIN_02                     - 5: testData = findTestData("TestData1")
+2025-05-22 23:26:36.062 DEBUG testcase.TC_LOGIN_02                     - 6: username = testData.getValue("username", 2)
+2025-05-22 23:26:36.069 DEBUG testcase.TC_LOGIN_02                     - 7: password = testData.getValue("password", 2)
+2025-05-22 23:26:36.073 DEBUG testcase.TC_LOGIN_02                     - 8: setText(findTestObject("LoginPage/UsernameField"), username)
+2025-05-22 23:26:36.887 DEBUG testcase.TC_LOGIN_02                     - 9: setText(findTestObject("LoginPage/PasswordField"), password)
+2025-05-22 23:26:37.431 DEBUG testcase.TC_LOGIN_02                     - 10: click(findTestObject("LoginPage/LoginSubmitButton"))
+2025-05-22 23:26:38.561 DEBUG testcase.TC_LOGIN_02                     - 11: verifyElementText(findTestObject("LoginPage/ErrorMessage"), "Login failed! Please ensure the username and password are valid.")
+2025-05-22 23:26:39.068 DEBUG testcase.TC_LOGIN_02                     - 12: takeFullPageScreenshot()
+2025-05-22 23:26:40.880 INFO  c.kms.katalon.core.webui.util.FileUtil   - 0 hidden object(s)
+2025-05-22 23:26:41.412 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/Login/TC_LOGIN_02
+2025-05-22 23:26:41.415 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2025-05-22 23:26:41.415 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/Login/TC_LOGIN_03
+2025-05-22 23:26:41.458 DEBUG testcase.TC_LOGIN_03                     - 1: openBrowser("")
+2025-05-22 23:26:41.463 WARN  c.k.k.core.webui.driver.DriverFactory    - A browser is already opened. Closing browser and opening a new one
+2025-05-22 23:26:41.594 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Chrome' driver
+2025-05-22 23:26:41.596 INFO  c.k.k.core.webui.driver.DriverFactory    - Action delay is set to 0 milliseconds
+May 22, 2025 11:26:43 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 136
+May 22, 2025 11:26:43 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 136.0.7103.114. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.28.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+2025-05-22 23:26:43.054 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = 273c358798da8161ebf15bf9f710501d
+2025-05-22 23:26:43.055 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Chrome 136.0.7103.114
+2025-05-22 23:26:43.055 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Mac OS X
+2025-05-22 23:26:43.056 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 4.28.1
+2025-05-22 23:26:43.057 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList="", isApplyToDesiredCapabilities=true }
+2025-05-22 23:26:43.075 DEBUG testcase.TC_LOGIN_03                     - 2: navigateToUrl(baseUrl)
+2025-05-22 23:26:47.677 DEBUG testcase.TC_LOGIN_03                     - 3: click(findTestObject("LoginPage/IconMenu"))
+2025-05-22 23:26:47.991 DEBUG testcase.TC_LOGIN_03                     - 4: click(findTestObject("LoginPage/LoginButton"))
+2025-05-22 23:26:48.837 DEBUG testcase.TC_LOGIN_03                     - 5: click(findTestObject("LoginPage/LoginSubmitButton"))
+2025-05-22 23:26:49.236 DEBUG testcase.TC_LOGIN_03                     - 6: verifyElementText(findTestObject("LoginPage/ErrorMessage"), "Login failed! Please ensure the username and password are valid.")
+2025-05-22 23:26:50.558 DEBUG testcase.TC_LOGIN_03                     - 7: takeFullPageScreenshot()
+2025-05-22 23:26:52.358 INFO  c.kms.katalon.core.webui.util.FileUtil   - 0 hidden object(s)
+2025-05-22 23:26:52.857 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/Login/TC_LOGIN_03
+2025-05-22 23:26:52.861 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2025-05-22 23:26:52.861 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/Login/TC_LOGIN_04
+2025-05-22 23:26:52.914 DEBUG testcase.TC_LOGIN_04                     - 1: openBrowser("")
+2025-05-22 23:26:52.918 WARN  c.k.k.core.webui.driver.DriverFactory    - A browser is already opened. Closing browser and opening a new one
+2025-05-22 23:26:53.044 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Chrome' driver
+2025-05-22 23:26:53.046 INFO  c.k.k.core.webui.driver.DriverFactory    - Action delay is set to 0 milliseconds
+May 22, 2025 11:26:54 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 136
+May 22, 2025 11:26:54 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 136.0.7103.114. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.28.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+2025-05-22 23:26:54.537 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = 031bc9d3669b737f4afc05e4b40fb931
+2025-05-22 23:26:54.537 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Chrome 136.0.7103.114
+2025-05-22 23:26:54.538 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Mac OS X
+2025-05-22 23:26:54.538 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 4.28.1
+2025-05-22 23:26:54.539 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList="", isApplyToDesiredCapabilities=true }
+2025-05-22 23:26:54.551 DEBUG testcase.TC_LOGIN_04                     - 2: navigateToUrl(baseUrl)
+2025-05-22 23:26:58.708 DEBUG testcase.TC_LOGIN_04                     - 3: click(findTestObject("LoginPage/IconMenu"))
+2025-05-22 23:26:59.018 DEBUG testcase.TC_LOGIN_04                     - 4: click(findTestObject("LoginPage/LoginButton"))
+2025-05-22 23:26:59.947 DEBUG testcase.TC_LOGIN_04                     - 5: testData = findTestData("TestData1")
+2025-05-22 23:26:59.956 DEBUG testcase.TC_LOGIN_04                     - 6: username = testData.getValue("username", 1)
+2025-05-22 23:26:59.960 DEBUG testcase.TC_LOGIN_04                     - 7: password = testData.getValue("password", 1)
+2025-05-22 23:26:59.963 DEBUG testcase.TC_LOGIN_04                     - 8: setText(findTestObject("LoginPage/UsernameField"), username)
+2025-05-22 23:27:00.665 DEBUG testcase.TC_LOGIN_04                     - 9: setText(findTestObject("LoginPage/PasswordField"), password)
+2025-05-22 23:27:01.199 DEBUG testcase.TC_LOGIN_04                     - 10: click(findTestObject("LoginPage/LoginSubmitButton"))
+2025-05-22 23:27:02.121 DEBUG testcase.TC_LOGIN_04                     - 11: verifyElementPresent(findTestObject("AppointmentPage/ApplyButton"), 5)
+2025-05-22 23:27:02.590 DEBUG testcase.TC_LOGIN_04                     - 12: click(findTestObject("LoginPage/IconMenu"))
+2025-05-22 23:27:02.867 DEBUG testcase.TC_LOGIN_04                     - 13: click(findTestObject("LoginPage/ClickLogout"))
+2025-05-22 23:27:03.827 DEBUG testcase.TC_LOGIN_04                     - 14: takeFullPageScreenshot()
+2025-05-22 23:27:05.350 INFO  c.kms.katalon.core.webui.util.FileUtil   - 0 hidden object(s)
+2025-05-22 23:27:05.775 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/Login/TC_LOGIN_04
+2025-05-22 23:27:05.778 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2025-05-22 23:27:05.778 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/Login/TC_LOGIN_05
+2025-05-22 23:27:05.842 DEBUG testcase.TC_LOGIN_05                     - 1: openBrowser("")
+2025-05-22 23:27:05.847 WARN  c.k.k.core.webui.driver.DriverFactory    - A browser is already opened. Closing browser and opening a new one
+2025-05-22 23:27:05.985 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Chrome' driver
+2025-05-22 23:27:05.987 INFO  c.k.k.core.webui.driver.DriverFactory    - Action delay is set to 0 milliseconds
+May 22, 2025 11:27:07 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 136
+May 22, 2025 11:27:07 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 136.0.7103.114. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.28.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+2025-05-22 23:27:07.480 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = 2381878da92bbfb2d5c40fe9ed78158e
+2025-05-22 23:27:07.481 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Chrome 136.0.7103.114
+2025-05-22 23:27:07.481 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Mac OS X
+2025-05-22 23:27:07.481 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 4.28.1
+2025-05-22 23:27:07.483 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList="", isApplyToDesiredCapabilities=true }
+2025-05-22 23:27:07.495 DEBUG testcase.TC_LOGIN_05                     - 2: navigateToUrl(baseUrl)
+2025-05-22 23:27:12.829 DEBUG testcase.TC_LOGIN_05                     - 3: click(findTestObject("LoginPage/IconMenu"))
+2025-05-22 23:27:13.143 DEBUG testcase.TC_LOGIN_05                     - 4: click(findTestObject("LoginPage/MakeAppointment"))
+2025-05-22 23:27:14.419 DEBUG testcase.TC_LOGIN_05                     - 5: verifyElementPresent(findTestObject("LoginPage/VerifyLoginPage"), 5)
+2025-05-22 23:27:14.657 DEBUG testcase.TC_LOGIN_05                     - 6: takeFullPageScreenshot()
+2025-05-22 23:27:16.499 INFO  c.kms.katalon.core.webui.util.FileUtil   - 0 hidden object(s)
+2025-05-22 23:27:16.973 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/Login/TC_LOGIN_05
+2025-05-22 23:27:17.145 INFO  c.k.katalon.core.main.TestSuiteExecutor  - --------------------
+2025-05-22 23:27:17.145 INFO  c.k.katalon.core.main.TestSuiteExecutor  - END Test Suites/LOGIN
+2025-05-22 23:27:17.145 INFO  c.k.katalon.core.main.TestSuiteExecutor  - ====================
